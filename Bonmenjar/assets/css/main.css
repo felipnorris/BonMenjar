@@ -1651,6 +1651,49 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+/* Recipe Modal Styles */
+.modal-xl {
+  max-width: 1140px;
+}
+
+.recipe-image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+/* Video Container Styles */
+.recipe-video-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Fixed height to match map */
+  margin-bottom: 1rem;
+}
+
+.recipe-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+#recipe-map {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 300px;
+}
+
+/* Recipe Content Styles */
+.recipe-ingredients {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipe-description {
+  margin: 1rem 0;
+}
+
+.recipe-actions {
+  margin-top: 1rem;
 }

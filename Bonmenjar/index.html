@@ -24,6 +24,16 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -732,38 +742,80 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/recepta.js"></script>
 
-    <!-- Recipe Modal -->
-    <div class="modal fade" id="recipeModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="" alt="" class="img-fluid recipe-image">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Ingredients</h4>
-                            <ul class="recipe-ingredients"></ul>
-                            <h4>Preparació</h4>
-                            <div class="recipe-instructions"></div>
-                            <div class="recipe-actions mt-3">
-                                <button class="btn btn-primary btn-speak">
-                                    <i class="bi bi-volume-up"></i> Escoltar
-                                </button>
-                                <button class="btn btn-secondary btn-share">
-                                    <i class="bi bi-share"></i> Compartir
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+<!-- Recipe Modal -->
+<div class="modal fade" id="recipeModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <!-- First Row: Image and Details -->
+              <div class="row mb-4">
+                  <div class="col-md-6">
+                      <img src="" alt="" class="img-fluid recipe-image rounded mb-3">
+                      <div class="recipe-description mb-3"></div>
+                  </div>
+                  <div class="col-md-6">
+                      <h4>Ingredients</h4>
+                      <ul class="recipe-ingredients mb-3"></ul>
+                      <h4>Preparació</h4>
+                      <div class="recipe-instructions mb-3"></div>
+                      <div class="recipe-actions">
+                          <button class="btn btn-primary btn-speak">
+                              <i class="bi bi-volume-up"></i> Escoltar
+                          </button>
+                          <button class="btn btn-secondary btn-share">
+                              <i class="bi bi-share"></i> Compartir
+                          </button>
+                      </div>
+                  </div>
+              </div>
 
+              <!-- Second Row: Video and Map -->
+              <div class="row mb-4">
+                  <div class="col-md-6">
+                      <h4>Vídeo</h4>
+                      <div class="ratio ratio-16x9 mb-3">
+                          <iframe class="recipe-video" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <h4>On trobar aquest plat</h4>
+                      <div id="recipe-map" class="rounded" style="height: 300px;"></div>
+                  </div>
+              </div>
+
+              <!-- Third Row: Reviews -->
+              <div class="row">
+                  <div class="col-12">
+                      <h4>Opinions</h4>
+                      <div class="reviews-container mb-3"></div>
+                      <form class="review-form">
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <select name="rating" class="form-select mb-3" required>
+                                      <option value="5">⭐⭐⭐⭐⭐</option>
+                                      <option value="4">⭐⭐⭐⭐</option>
+                                      <option value="3">⭐⭐⭐</option>
+                                      <option value="2">⭐⭐</option>
+                                      <option value="1">⭐</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-7">
+                                  <input type="text" name="comment" class="form-control mb-3" placeholder="Escriu la teva opinió..." required>
+                              </div>
+                              <div class="col-md-2">
+                                  <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
 </html>
