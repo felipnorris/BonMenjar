@@ -22,6 +22,28 @@ const recipes = {
             }
         ],
         reviews: []
+    },
+    'recipe-2': {
+        title: 'Caragols',
+        image: 'assets/img/menu/caragols.jpg',
+        description: 'Plat típic del mes de Març...',
+        video: 'https://www.youtube.com/embed/Y7f98aduVJ8',
+        ingredients: [
+            'Caragols',
+            'All i julivert',
+            'Sal'
+        ],
+        instructions: 'Preparació dels caragols...',
+        category: 'principals',
+        restaurants: [
+            {
+                name: 'Can Joan',
+                lat: 39.7219,
+                lng: 2.9106,
+                address: 'Carrer Major, 15, Sóller'
+            }
+        ],
+        reviews: []
     }
 };
 
@@ -34,7 +56,7 @@ class RecipeHandler {
     }
 
     initializeListeners() {
-        document.querySelectorAll('.menu-item').forEach(item => {
+        document.querySelectorAll('.menu-item, .recipe-link').forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
                 const recipeId = item.dataset.recipeId;
