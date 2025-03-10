@@ -53,6 +53,7 @@ class RecipeHandler {
         this.map = null;
         this.currentRecipeId = null;
         this.initializeListeners();
+        this.initializeSearch();
     }
 
     initializeListeners() {
@@ -79,6 +80,24 @@ class RecipeHandler {
         });
     }
 
+    initializeSearch() {
+        document.getElementById('recipe-search')?.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                const title = item.querySelector('h4').textContent.toLowerCase();
+                const ingredients = item.querySelector('.ingredients').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || ingredients.includes(searchTerm)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    }
+    
     showRecipe(recipeId) {
         const recipe = recipes[recipeId];
         const modal = document.getElementById('recipeModal');

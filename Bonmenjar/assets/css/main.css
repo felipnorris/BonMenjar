@@ -1697,3 +1697,21 @@ section,
 .recipe-actions {
   margin-top: 1rem;
 }
+
+.search-box {
+  max-width: 300px;
+}
+
+.search-box .input-group {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-box .form-control {
+  border-right: none;
+}
+
+.search-box .btn {
+  border-left: none;
+  background-color: white;
+}
