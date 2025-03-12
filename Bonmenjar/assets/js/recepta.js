@@ -4,7 +4,7 @@ class RecipeHandler {
         this.map = null;
         this.currentRecipeId = null;
         this.recipes = {};
-        this.reviews = {}; // Asegurar que siempre existe
+        this.reviews = {};
 
         Promise.all([this.loadRecipes(), this.loadReviews()]).then(() => {
             this.initializeListeners();
@@ -29,24 +29,16 @@ class RecipeHandler {
             this.reviews = await response.json();
         } catch (error) {
             console.error('Error loading reviews:', error);
-            this.reviews = {}; // En caso de error, inicializamos vacío
+            this.reviews = {};
         }
     }
     
 
     renderRecipes() {
-        // Clear existing recipes
+        // Netejar els continguts dels contenidors de categories
         document.querySelectorAll('.menu .row').forEach(container => {
             container.innerHTML = '';
         });
-    
-        // Category mapping
-        const categoryMapping = {
-            'entrants': 'menu-entrants',
-            'principals': 'menu-principals',
-            'postres': 'menu-postres',
-            'begudes': 'menu-begudes'
-        };
     
         function formatTime(isoTime) {
             if (!isoTime) return 'N/A';
@@ -57,12 +49,10 @@ class RecipeHandler {
         }
     
         // Render recipes by category
-        Object.entries(this.recipes).forEach(([id, recipe]) => {
-            const tabId = categoryMapping[recipe.recipeCategory];            
-            const categoryContainer = document.querySelector(`#${tabId} .row`);
+        Object.entries(this.recipes).forEach(([id, recipe]) => {           
+            const categoryContainer = document.querySelector(`#menu-${recipe.recipeCategory} .row`);
             
             if (categoryContainer) {
-
                 const totalTime = formatTime(recipe.totalTime);
                 const recipeYield = recipe.recipeYield || 'Desconegut';
 
@@ -83,7 +73,6 @@ class RecipeHandler {
 
     updateFeaturedRecipe() {
         const currentMonth = new Date().toLocaleString('es', { month: 'long' });
-        console.log('Current month:', currentMonth);
         const featuredRecipe = Object.entries(this.recipes).find(([_, recipe]) => 
             recipe.featuredMonth && recipe.featuredMonth.toLowerCase() === currentMonth
         );
@@ -115,7 +104,6 @@ class RecipeHandler {
             if (target) {
                 e.preventDefault();
                 const recipeId = target.dataset.recipeId;
-                console.log("Recipe clicked, ID:", recipeId); // Depuración
                 if (recipeId) recipeHandler.showRecipe(recipeId);
             }
         });
@@ -161,7 +149,6 @@ class RecipeHandler {
     }
 
     showRecipe(recipeId) {
-        console.log(`Intentando mostrar receta con ID: ${recipeId}`); // Debugging
         const recipe = this.recipes[recipeId];
         if (!recipe) {
             console.error("Receta no encontrada");
