@@ -1,69 +1,114 @@
-const recipes = {
-    'recipe-1': {
-        title: 'Frit Mallorquí',
-        image: 'assets/img/menu/frit-mallorqui.jpg',
-        description: 'Plat tradicional mallorquí elaborat amb fetge i altres vísceres, típic dels matins de matances.',
-        video: 'https://www.youtube.com/embed/example',
-        ingredients: [
-            '500g fetge de xai',
-            '2 patates',
-            '2 pebrots vermells',
-            'Oli d\'oliva',
-            'Sal i pebre'
-        ],
-        instructions: 'Tallar el fetge a daus petits. Pelar i tallar les patates. Fregir tot fins que estigui daurat...',
-        category: 'starters',
-        restaurants: [
-            {
-                name: 'Ca na Toneta',
-                lat: 39.6953,
-                lng: 3.0176,
-                address: 'Carrer Major, 12, Palma'
-            }
-        ],
-        reviews: []
-    },
-    'recipe-2': {
-        title: 'Caragols',
-        image: 'assets/img/menu/caragols.jpg',
-        description: 'Plat típic del mes de Març...',
-        video: 'https://www.youtube.com/embed/Y7f98aduVJ8',
-        ingredients: [
-            'Caragols',
-            'All i julivert',
-            'Sal'
-        ],
-        instructions: 'Preparació dels caragols...',
-        category: 'principals',
-        restaurants: [
-            {
-                name: 'Can Joan',
-                lat: 39.7219,
-                lng: 2.9106,
-                address: 'Carrer Major, 15, Sóller'
-            }
-        ],
-        reviews: []
-    }
-};
-
 class RecipeHandler {
     constructor() {
         this.modal = new bootstrap.Modal(document.getElementById('recipeModal'));
         this.map = null;
         this.currentRecipeId = null;
-        this.initializeListeners();
-        this.initializeSearch();
+        this.recipes = {};
+        this.loadRecipes().then(() => {
+            this.initializeListeners();
+            this.initializeSearch();
+            this.renderRecipes();
+            this.updateFeaturedRecipe();
+        });
+    }
+
+    async loadRecipes() {
+        try {
+            const response = await fetch('assets/data/receptes.json');
+            this.recipes = await response.json();
+        } catch (error) {
+            console.error('Error loading recipes:', error);
+        }
+    }
+
+    renderRecipes() {
+        // Clear existing recipes
+        document.querySelectorAll('.menu .row').forEach(container => {
+            container.innerHTML = '';
+        });
+    
+        // Category mapping
+        const categoryMapping = {
+            'entrants': 'menu-entrants',
+            'principals': 'menu-principals',
+            'postres': 'menu-postres',
+            'begudes': 'menu-begudes'
+        };
+    
+        // Debug log
+        console.log('Available recipes:', this.recipes);
+    
+        // Render recipes by category
+        Object.entries(this.recipes).forEach(([id, recipe]) => {
+            console.log(`Processing recipe: ${recipe.name}, Category: ${recipe.recipeCategory}`);
+            const tabId = categoryMapping[recipe.recipeCategory];
+            console.log(`Looking for container with ID: ${tabId}`);
+            
+            const categoryContainer = document.querySelector(`#${tabId} .row`);
+            
+            if (categoryContainer) {
+                categoryContainer.innerHTML += `
+                    <div class="col-lg-4 menu-item">
+                        <a href="#" class="recipe-link" data-recipe-id="${id}">
+                            <img src="${recipe.image}" class="menu-img img-fluid" alt="${recipe.name}">
+                        </a>
+                        <h4>${recipe.name}</h4>
+                        <p class="ingredients">
+                            ${recipe.recipeIngredient.slice(0,3).join(', ')}
+                        </p>
+                    </div>
+                `;
+            } else {
+                console.warn(`Container not found for category: ${recipe.recipeCategory}`);
+            }
+        });
+    }
+
+    updateFeaturedRecipe() {
+        const currentMonth = new Date().toLocaleString('es', { month: 'long' });
+        console.log('Current month:', currentMonth);
+        const featuredRecipe = Object.entries(this.recipes).find(([_, recipe]) => 
+            recipe.featuredMonth && recipe.featuredMonth.toLowerCase() === currentMonth
+        );
+
+        if (featuredRecipe) {
+            const [recipeId, recipe] = featuredRecipe;
+            const heroSection = document.querySelector('#hero');
+            
+            if (heroSection) {
+                const title = heroSection.querySelector('h1');
+                const description = heroSection.querySelector('p');
+                const image = heroSection.querySelector('.hero-img img');
+                const recipeLink = heroSection.querySelector('.recipe-link');
+    
+                if (title) title.textContent = 'Plat del mes';
+                if (description) description.innerHTML = 
+                    `${recipe.name}<br>Plat típic del mes de ${recipe.featuredMonth}`;
+                if (image) image.src = recipe.image;
+                if (recipeLink) recipeLink.dataset.recipeId = recipeId;
+            }
+        } else {
+            console.log('No featured recipe for current month');
+        }
     }
 
     initializeListeners() {
-        document.querySelectorAll('.menu-item, .recipe-link').forEach(item => {
-            item.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
+            const target = e.target.closest('.recipe-link');
+            if (target) {
                 e.preventDefault();
-                const recipeId = item.dataset.recipeId;
-                this.currentRecipeId = recipeId;
+                const recipeId = target.dataset.recipeId;
+                console.log("Recipe clicked, ID:", recipeId); // Depuración
+                if (recipeId) recipeHandler.showRecipe(recipeId);
+            }
+        });
+
+        document.querySelector('#hero .recipe-link')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            const recipeId = e.currentTarget.dataset.recipeId;
+            if (recipeId) {
                 this.showRecipe(recipeId);
-            });
+            }
         });
 
         document.querySelector('.btn-speak')?.addEventListener('click', () => {
@@ -97,25 +142,25 @@ class RecipeHandler {
             });
         });
     }
-    
-    showRecipe(recipeId) {
-        const recipe = recipes[recipeId];
-        const modal = document.getElementById('recipeModal');
 
-        modal.querySelector('.modal-title').textContent = recipe.title;
+    showRecipe(recipeId) {
+        const recipe = this.recipes[recipeId];
+        if (!recipe) return;
+
+        const modal = document.getElementById('recipeModal');
+        modal.querySelector('.modal-title').textContent = recipe.name;
         modal.querySelector('.recipe-image').src = recipe.image;
         modal.querySelector('.recipe-description').textContent = recipe.description;
-        modal.querySelector('.recipe-video').src = recipe.video;
         
         const ingredientsList = modal.querySelector('.recipe-ingredients');
-        ingredientsList.innerHTML = recipe.ingredients
+        ingredientsList.innerHTML = recipe.recipeIngredient
             .map(ing => `<li>${ing}</li>`)
             .join('');
             
-        modal.querySelector('.recipe-instructions').textContent = recipe.instructions;
+        modal.querySelector('.recipe-instructions').textContent = recipe.recipeInstructions[0].text;
+        modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
         
         this.initMap(recipe.restaurants);
-        this.displayReviews(recipe.reviews);
         this.modal.show();
     }
 
@@ -132,11 +177,12 @@ class RecipeHandler {
         });
 
         restaurants.forEach(rest => {
-            L.marker([rest.lat, rest.lng])
-                .bindPopup(`<b>${rest.name}</b><br>${rest.address}`)
+            L.marker([rest.geo.latitude, rest.geo.longitude])
+                .bindPopup(`<b>${rest.name}</b><br>${rest.address.streetAddress}`)
                 .addTo(this.map);
         });
     }
+
 
     submitReview(form) {
         const review = {
@@ -181,6 +227,8 @@ class RecipeHandler {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const recipeHandler = new RecipeHandler();
+let recipeHandler;
+
+document.addEventListener('DOMContentLoaded', () => {0
+    recipeHandler = new RecipeHandler();
 });

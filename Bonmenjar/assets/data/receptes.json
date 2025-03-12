@@ -1,0 +1,131 @@
+{
+    "recipe-1": {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Frit Mallorquí",
+        "image": "assets/img/menu/frit-mallorqui.jpg",
+        "description": "Plat tradicional mallorquí elaborat amb fetge i altres vísceres, típic dels matins de matances.",
+        "author": {
+            "@type": "Organization",
+            "name": "BonMenjar"
+        },
+        "datePublished": "2024-03-15",
+        "recipeCategory": "entrants",
+        "recipeCuisine": "Balear",
+        "prepTime": "PT20M",
+        "cookTime": "PT30M",
+        "totalTime": "PT50M",
+        "recipeYield": "4 persones",
+        "recipeIngredient": [
+            "500g fetge de xai",
+            "2 patates",
+            "2 pebrots vermells",
+            "Oli d'oliva",
+            "Sal i pebre"
+        ],
+        "recipeInstructions": [
+            {
+                "@type": "HowToStep",
+                "text": "Tallar el fetge a daus petits..."
+            }
+        ],
+        "video": {
+            "@type": "VideoObject",
+            "contentUrl": "https://www.youtube.com/embed/example"
+        },
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "350 kcal",
+            "servingSize": "1 porció"
+        },
+        "featuredMonth": null,
+        "restaurants": [
+            {
+                "@type": "Restaurant",
+                "name": "Ca na Toneta",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Carrer Major, 12",
+                    "addressLocality": "Palma",
+                    "addressRegion": "Illes Balears"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 39.6953,
+                    "longitude": 3.0176
+                }
+            }
+        ]
+    },
+    "recipe-2": {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Caragols",
+        "image": "assets/img/menu/caragols.jpg",
+        "description": "Els caragols són un dels plats més tradicionals de la gastronomia mallorquina, especialment populars durant la primavera.",
+        "author": {
+            "@type": "Organization",
+            "name": "BonMenjar"
+        },
+        "datePublished": "2024-03-15",
+        "recipeCategory": "principals",
+        "recipeCuisine": "Balear",
+        "prepTime": "PT1H",
+        "cookTime": "PT45M",
+        "totalTime": "PT1H45M",
+        "recipeYield": "4 persones",
+        "recipeIngredient": [
+            "1kg de caragols",
+            "4 alls",
+            "1 manat de julivert",
+            "Pebre vermell",
+            "Oli d'oliva",
+            "Sal"
+        ],
+        "recipeInstructions": [
+            {
+                "@type": "HowToStep",
+                "text": "Netejar els caragols amb aigua i sal"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Deixar-los en dejú durant 24 hores"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Bullir-los amb herbes aromàtiques"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Preparar la salsa d'all i julivert"
+            }
+        ],
+        "video": {
+            "@type": "VideoObject",
+            "contentUrl": "https://www.youtube.com/embed/Y7f98aduVJ8"
+        },
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "250 kcal",
+            "servingSize": "1 porció"
+        },
+        "featuredMonth": "marzo",
+        "restaurants": [
+            {
+                "@type": "Restaurant",
+                "name": "Can Joan",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Carrer Major, 15",
+                    "addressLocality": "Sóller",
+                    "addressRegion": "Illes Balears"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 39.7219,
+                    "longitude": 2.9106
+                }
+            }
+        ]
+    }
+}
