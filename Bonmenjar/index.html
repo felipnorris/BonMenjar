@@ -519,6 +519,21 @@
                       <div id="recipe-map" style="height: 315px;"></div>
                   </div>
               </div>
+              <h4>Afegeix una ressenya</h4>
+              <form id="review-form">
+                  <input type="text" id="review-author" placeholder="El teu nom" required>
+                  <select id="review-rating">
+                      <option value="5">⭐⭐⭐⭐⭐</option>
+                      <option value="4">⭐⭐⭐⭐</option>
+                      <option value="3">⭐⭐⭐</option>
+                      <option value="2">⭐⭐</option>
+                      <option value="1">⭐</option>
+                  </select>
+                  <textarea id="review-comment" placeholder="Escriu la teva ressenya..." required></textarea>
+                  <button type="submit">Enviar</button>
+              </form>
+              <div class="reviews-container"></div>
+
           </div>
       </div>
   </div>

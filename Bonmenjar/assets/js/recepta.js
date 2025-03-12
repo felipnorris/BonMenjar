@@ -4,7 +4,9 @@ class RecipeHandler {
         this.map = null;
         this.currentRecipeId = null;
         this.recipes = {};
-        this.loadRecipes().then(() => {
+        this.reviews = {}; // Asegurar que siempre existe
+
+        Promise.all([this.loadRecipes(), this.loadReviews()]).then(() => {
             this.initializeListeners();
             this.initializeSearch();
             this.renderRecipes();
@@ -21,6 +23,17 @@ class RecipeHandler {
         }
     }
 
+    async loadReviews() {
+        try {
+            const response = await fetch('assets/data/reviews.json');
+            this.reviews = await response.json();
+        } catch (error) {
+            console.error('Error loading reviews:', error);
+            this.reviews = {}; // En caso de error, inicializamos vacío
+        }
+    }
+    
+
     renderRecipes() {
         // Clear existing recipes
         document.querySelectorAll('.menu .row').forEach(container => {
@@ -35,27 +48,31 @@ class RecipeHandler {
             'begudes': 'menu-begudes'
         };
     
-        // Debug log
-        console.log('Available recipes:', this.recipes);
+        function formatTime(isoTime) {
+            if (!isoTime) return 'N/A';
+            const match = isoTime.match(/PT(?:(\d+)H)?(?:(\d+)M)?/);
+            const hours = match[1] ? `${match[1]}h` : '';
+            const minutes = match[2] ? `${match[2]}min` : '';
+            return `${hours} ${minutes}`.trim();
+        }
     
         // Render recipes by category
         Object.entries(this.recipes).forEach(([id, recipe]) => {
-            console.log(`Processing recipe: ${recipe.name}, Category: ${recipe.recipeCategory}`);
-            const tabId = categoryMapping[recipe.recipeCategory];
-            console.log(`Looking for container with ID: ${tabId}`);
-            
+            const tabId = categoryMapping[recipe.recipeCategory];            
             const categoryContainer = document.querySelector(`#${tabId} .row`);
             
             if (categoryContainer) {
+
+                const totalTime = formatTime(recipe.totalTime);
+                const recipeYield = recipe.recipeYield || 'Desconegut';
+
                 categoryContainer.innerHTML += `
                     <div class="col-lg-4 menu-item">
                         <a href="#" class="recipe-link" data-recipe-id="${id}">
                             <img src="${recipe.image}" class="menu-img img-fluid" alt="${recipe.name}">
                         </a>
                         <h4>${recipe.name}</h4>
-                        <p class="ingredients">
-                            ${recipe.recipeIngredient.slice(0,3).join(', ')}
-                        </p>
+                         <p class="recipe-meta"><strong>Temps:</strong> ${totalTime} | <strong>Per a:</strong> ${recipe.recipeYield}</p>
                     </div>
                 `;
             } else {
@@ -115,9 +132,9 @@ class RecipeHandler {
             this.speakRecipe();
         });
 
-        document.querySelector('.review-form')?.addEventListener('submit', (e) => {
+        document.getElementById('review-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            this.submitReview(e.target);
+            recipeHandler.submitReview();
         });
 
         document.querySelector('.btn-share')?.addEventListener('click', () => {
@@ -144,10 +161,19 @@ class RecipeHandler {
     }
 
     showRecipe(recipeId) {
+        console.log(`Intentando mostrar receta con ID: ${recipeId}`); // Debugging
         const recipe = this.recipes[recipeId];
-        if (!recipe) return;
-
+        if (!recipe) {
+            console.error("Receta no encontrada");
+            return;
+        }
+    
         const modal = document.getElementById('recipeModal');
+        if (!modal) {
+            console.error("Modal no encontrado");
+            return;
+        }
+
         modal.querySelector('.modal-title').textContent = recipe.name;
         modal.querySelector('.recipe-image').src = recipe.image;
         modal.querySelector('.recipe-description').textContent = recipe.description;
@@ -157,7 +183,12 @@ class RecipeHandler {
             .map(ing => `<li>${ing}</li>`)
             .join('');
             
-        modal.querySelector('.recipe-instructions').textContent = recipe.recipeInstructions[0].text;
+        const instructionsList = modal.querySelector('.recipe-instructions');
+        instructionsList.innerHTML = recipe.recipeInstructions
+            .map(step => `<li>${step.text}</li>`)
+            .join('');
+
+        this.displayReviews(recipeId);
         modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
         
         this.initMap(recipe.restaurants);
@@ -183,7 +214,6 @@ class RecipeHandler {
         });
     }
 
-
     submitReview(form) {
         const review = {
             rating: parseInt(form.rating.value),
@@ -196,15 +226,58 @@ class RecipeHandler {
         form.reset();
     }
 
-    displayReviews(reviews) {
-        const container = document.querySelector('.reviews-container');
-        container.innerHTML = reviews.map(review => `
-            <div class="review-item mb-3">
-                <div class="stars">${'⭐'.repeat(review.rating)}</div>
-                <p>${review.comment}</p>
-                <small class="text-muted">${new Date(review.date).toLocaleDateString()}</small>
-            </div>
-        `).join('');
+    displayReviews(recipeId) {
+        if (!this.reviews) {
+            console.error("Las reseñas no se han cargado correctamente.");
+            this.reviews = {}; // Evita futuros errores
+        }
+    
+        const reviewsContainer = document.querySelector('.reviews-container');
+        reviewsContainer.innerHTML = '';
+    
+        const reviews = this.reviews[recipeId] || [];
+        
+        if (reviews.length === 0) {
+            reviewsContainer.innerHTML = '<p>No hi ha ressenyes encara.</p>';
+            return;
+        }
+    
+        reviews.forEach(review => {
+            reviewsContainer.innerHTML += `
+                <div class="review-item">
+                    <strong>${review.author}</strong> - 
+                    <span>${'⭐'.repeat(review.reviewRating.ratingValue)}</span>
+                    <p>${review.reviewBody}</p>
+                </div>
+            `;
+        });
+    }
+
+    submitReview() {
+        const author = document.getElementById('review-author').value;
+        const rating = parseInt(document.getElementById('review-rating').value);
+        const comment = document.getElementById('review-comment').value;
+    
+        if (!author || !comment) return;
+    
+        const newReview = {
+            "@type": "Review",
+            "author": author,
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": rating
+            },
+            "reviewBody": comment
+        };
+    
+        if (!this.reviews[this.currentRecipeId]) {
+            this.reviews[this.currentRecipeId] = [];
+        }
+    
+        this.reviews[this.currentRecipeId].push(newReview);
+        this.displayReviews(this.currentRecipeId);
+    
+        document.getElementById('review-form').reset();
     }
 
     speakRecipe() {

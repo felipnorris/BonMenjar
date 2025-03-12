@@ -1,0 +1,33 @@
+{
+    "recipe-1": [
+        {
+            "@type": "Review",
+            "author": "Joan",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "Deliciós! M'ha encantat aquest plat."
+        },
+        {
+            "@type": "Review",
+            "author": "Maria",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Molt bo, però una mica salat."
+        }
+    ],
+    "recipe-2": [
+        {
+            "@type": "Review",
+            "author": "Pere",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3
+            },
+            "reviewBody": "No està malament, però no és el meu preferit."
+        }
+    ]
+}
