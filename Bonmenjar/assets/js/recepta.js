@@ -201,18 +201,6 @@ class RecipeHandler {
         });
     }
 
-    submitReview(form) {
-        const review = {
-            rating: parseInt(form.rating.value),
-            comment: form.comment.value,
-            date: new Date().toISOString()
-        };
-
-        recipes[this.currentRecipeId].reviews.push(review);
-        this.displayReviews(recipes[this.currentRecipeId].reviews);
-        form.reset();
-    }
-
     displayReviews(recipeId) {
         if (!this.reviews) {
             console.error("Las reseñas no se han cargado correctamente.");
