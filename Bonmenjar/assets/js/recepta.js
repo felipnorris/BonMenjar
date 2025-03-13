@@ -33,7 +33,6 @@ class RecipeHandler {
         }
     }
     
-
     renderRecipes() {
         // Netejar els continguts dels contenidors de categories
         document.querySelectorAll('.menu .row').forEach(container => {
@@ -114,10 +113,6 @@ class RecipeHandler {
             if (recipeId) {
                 this.showRecipe(recipeId);
             }
-        });
-
-        document.querySelector('.btn-speak')?.addEventListener('click', () => {
-            this.speakRecipe();
         });
 
         document.getElementById('review-form').addEventListener('submit', (e) => {
@@ -228,41 +223,6 @@ class RecipeHandler {
             `;
         }).join('');
         
-    }
-
-    submitReview() {
-        const author = document.getElementById('review-author').value;
-        const rating = parseInt(document.getElementById('review-rating').value);
-        const comment = document.getElementById('review-comment').value;
-    
-        if (!author || !comment) return;
-    
-        const newReview = {
-            "@type": "Review",
-            "author": author,
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": rating
-            },
-            "reviewBody": comment
-        };
-    
-        if (!this.reviews[this.currentRecipeId]) {
-            this.reviews[this.currentRecipeId] = [];
-        }
-    
-        this.reviews[this.currentRecipeId].push(newReview);
-        this.displayReviews(this.currentRecipeId);
-    
-        document.getElementById('review-form').reset();
-    }
-
-    speakRecipe() {
-        const recipe = recipes[this.currentRecipeId];
-        const text = `${recipe.title}. ${recipe.instructions}`;
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'ca-ES';
-        speechSynthesis.speak(utterance);
     }
 
     shareRecipe() {

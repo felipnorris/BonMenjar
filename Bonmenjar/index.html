@@ -499,6 +499,12 @@
                   <div class="col-md-6">
                       <img src="" alt="" class="img-fluid recipe-image rounded">
                       <div class="recipe-description mt-3"></div>
+                      <div class="speech-controls mt-3">
+                        <button class="btn btn-primary speech-btn" data-type="description">
+                            <i class="bi bi-volume-up"></i>
+                            Escoltar recepta
+                        </button>
+                    </div>
                   </div>
                   <div class="col-md-6">
                       <h4>Ingredients</h4>
@@ -519,21 +525,42 @@
                       <div id="recipe-map" style="height: 315px;"></div>
                   </div>
               </div>
-              <h4>Afegeix una ressenya</h4>
-              <form id="review-form">
-                  <input type="text" id="review-author" placeholder="El teu nom" required>
-                  <select id="review-rating">
-                      <option value="5">⭐⭐⭐⭐⭐</option>
-                      <option value="4">⭐⭐⭐⭐</option>
-                      <option value="3">⭐⭐⭐</option>
-                      <option value="2">⭐⭐</option>
-                      <option value="1">⭐</option>
-                  </select>
-                  <textarea id="review-comment" placeholder="Escriu la teva ressenya..." required></textarea>
-                  <button type="submit">Enviar</button>
-              </form>
-              <div class="reviews-container"></div>
-
+              <div class="review-section mt-5">
+                <h4 class="mb-4">Afegeix una ressenya</h4>
+                <form id="review-form" class="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="review-author" placeholder="El teu nom" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select class="form-select" id="review-rating">
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control" id="review-comment" rows="4" placeholder="Escriu la teva ressenya..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-primary px-4">Enviar ressenya</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="reviews-container">
+                    <h4 class="mb-3">Ressenyes</h4>
+                    <div class="reviews-list"></div>
+                </div>
+            </div>
           </div>
       </div>
   </div>
