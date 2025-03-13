@@ -210,22 +210,24 @@ class RecipeHandler {
         const reviewsContainer = document.querySelector('.reviews-container');
         reviewsContainer.innerHTML = '';
     
-        const reviews = this.reviews[recipeId] || [];
+        const reviews = Array.isArray(this.reviews[recipeId]) ? this.reviews[recipeId] : [];
         
         if (reviews.length === 0) {
             reviewsContainer.innerHTML = '<p>No hi ha ressenyes encara.</p>';
             return;
         }
     
-        reviews.forEach(review => {
-            reviewsContainer.innerHTML += `
+        reviewsContainer.innerHTML = reviews.map(review => {
+            const rating = review.reviewRating?.ratingValue ?? 0;
+            return `
                 <div class="review-item">
                     <strong>${review.author}</strong> - 
-                    <span>${'⭐'.repeat(review.reviewRating.ratingValue)}</span>
+                    <span>${'⭐'.repeat(rating)}</span>
                     <p>${review.reviewBody}</p>
                 </div>
             `;
-        });
+        }).join('');
+        
     }
 
     submitReview() {
