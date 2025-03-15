@@ -1,8 +1,11 @@
 {
-    "recipe-1": [
+    "@context": "http://schema.org",
+    "@type": "Review",
+    "reviews": [
         {
-            "@type": "Review",
+            "id": "review-1",
             "author": "Joan",
+            "itemReviewed": "recipe-1",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 5
@@ -10,19 +13,19 @@
             "reviewBody": "Deliciós! M'ha encantat aquest plat."
         },
         {
-            "@type": "Review",
+            "id": "review-2",
             "author": "Maria",
+            "itemReviewed": "recipe-1",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 4
             },
             "reviewBody": "Molt bo, però una mica salat."
-        }
-    ],
-    "recipe-2": [
+        },
         {
-            "@type": "Review",
+            "id": "review-3",
             "author": "Pere",
+            "itemReviewed": "recipe-2",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 3

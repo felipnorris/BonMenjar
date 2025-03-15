@@ -17,16 +17,27 @@ class RecipeHandler {
     async loadRecipes() {
         try {
             const response = await fetch('assets/data/receptes.json');
-            this.recipes = await response.json();
+            const data = await response.json();
+            // Store only the recipes object, not the whole graph
+            this.recipes = data['@graph'][0] || {};
         } catch (error) {
             console.error('Error loading recipes:', error);
+            this.recipes = {};
         }
     }
 
     async loadReviews() {
         try {
             const response = await fetch('assets/data/reviews.json');
-            this.reviews = await response.json();
+            const data = await response.json();
+            // Reorganizamos las reviews por receta
+            this.reviews = data.reviews.reduce((acc, review) => {
+                if (!acc[review.itemReviewed]) {
+                    acc[review.itemReviewed] = [];
+                }
+                acc[review.itemReviewed].push(review);
+                return acc;
+            }, {});
         } catch (error) {
             console.error('Error loading reviews:', error);
             this.reviews = {};
@@ -48,8 +59,9 @@ class RecipeHandler {
         }
     
         // Render recipes by category
-        Object.entries(this.recipes).forEach(([id, recipe]) => {           
-            const categoryContainer = document.querySelector(`#menu-${recipe.recipeCategory} .row`);
+        Object.entries(this.recipes).forEach(([id, recipe]) => {       
+            const category = recipe.recipeCategory;   
+            const categoryContainer = document.querySelector(`#menu-${category} .row`);
             
             if (categoryContainer) {
                 const totalTime = formatTime(recipe.totalTime);
@@ -61,19 +73,19 @@ class RecipeHandler {
                             <img src="${recipe.image}" class="menu-img img-fluid" alt="${recipe.name}">
                         </a>
                         <h4>${recipe.name}</h4>
-                         <p class="recipe-meta"><strong>Temps:</strong> ${totalTime} | <strong>Per a:</strong> ${recipe.recipeYield}</p>
+                         <p class="recipe-meta"><strong>Temps:</strong> ${totalTime} | <strong>Per a:</strong> ${recipeYield}</p>
                     </div>
                 `;
             } else {
-                console.warn(`Container not found for category: ${recipe.recipeCategory}`);
+                console.warn(`Container not found for category: ${category}`);
             }
         });
     }
 
     updateFeaturedRecipe() {
-        const currentMonth = new Date().toLocaleString('es', { month: 'long' });
+        const currentMonth = new Date().toLocaleString('ca-ES', { month: 'long' });
         const featuredRecipe = Object.entries(this.recipes).find(([_, recipe]) => 
-            recipe.featuredMonth && recipe.featuredMonth.toLowerCase() === currentMonth
+            recipe.temporal && recipe.temporal.toLowerCase() === currentMonth
         );
 
         if (featuredRecipe) {
@@ -173,27 +185,51 @@ class RecipeHandler {
         this.displayReviews(recipeId);
         modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
         
-        this.initMap(recipe.restaurants);
+        this.initMap(recipe.subjectOf);
         this.modal.show();
     }
 
-    initMap(restaurants) {
+    initMap(restaurantData) {
+        if (!restaurantData) {
+            console.warn("No restaurant data available");
+            return;
+        }
+    
+        // Initialize map if not already done
         if (!this.map) {
             this.map = L.map('recipe-map').setView([39.6953, 3.0176], 10);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.map);
         }
-
+    
+        // Clear existing markers
         this.map.eachLayer((layer) => {
             if (layer instanceof L.Marker) {
                 this.map.removeLayer(layer);
             }
         });
-
-        restaurants.forEach(rest => {
-            L.marker([rest.geo.latitude, rest.geo.longitude])
-                .bindPopup(`<b>${rest.name}</b><br>${rest.address.streetAddress}`)
-                .addTo(this.map);
-        });
+    
+        // Handle single restaurant data from subjectOf
+        if (restaurantData['@type'] === 'Restaurant' && restaurantData.geo) {
+            try {
+                const marker = L.marker([
+                    parseFloat(restaurantData.geo.latitude),
+                    parseFloat(restaurantData.geo.longitude)
+                ]);
+    
+                const popupContent = `
+                    <div class="restaurant-popup">
+                        <h5>${restaurantData.name}</h5>
+                        ${restaurantData.address?.streetAddress ? 
+                            `<p>${restaurantData.address.streetAddress}, ${restaurantData.address.addressLocality}</p>` 
+                            : ''}
+                    </div>
+                `;
+    
+                marker.bindPopup(popupContent).addTo(this.map);
+            } catch (error) {
+                console.error('Error adding restaurant marker:', error);
+            }
+        }
     }
 
     displayReviews(recipeId) {
