@@ -1,16 +1,24 @@
+import { MapHandler } from './modules/MapHandler.js';
+import { ReviewHandler } from './modules/ReviewHandler.js';
+import { FeaturedRecipeHandler } from './modules/FeaturedRecipeHandler.js';
+
 class RecipeHandler {
     constructor() {
         this.modal = new bootstrap.Modal(document.getElementById('recipeModal'));
-        this.map = null;
+        this.mapHandler = new MapHandler();
+        this.reviewHandler = new ReviewHandler();
+        this.featuredHandler = new FeaturedRecipeHandler();
         this.currentRecipeId = null;
         this.recipes = {};
-        this.reviews = {};
 
-        Promise.all([this.loadRecipes(), this.loadReviews()]).then(() => {
+        Promise.all([
+            this.loadRecipes(), 
+            this.reviewHandler.loadReviews()
+        ]).then(() => {
             this.initializeListeners();
             this.initializeSearch();
             this.renderRecipes();
-            this.updateFeaturedRecipe();
+            this.featuredHandler.updateFeaturedRecipe(this.recipes);
         });
     }
 
@@ -80,33 +88,6 @@ class RecipeHandler {
                 console.warn(`Container not found for category: ${category}`);
             }
         });
-    }
-
-    updateFeaturedRecipe() {
-        const currentMonth = new Date().toLocaleString('ca-ES', { month: 'long' });
-        const featuredRecipe = Object.entries(this.recipes).find(([_, recipe]) => 
-            recipe.temporal && recipe.temporal.toLowerCase() === currentMonth
-        );
-
-        if (featuredRecipe) {
-            const [recipeId, recipe] = featuredRecipe;
-            const heroSection = document.querySelector('#hero');
-            
-            if (heroSection) {
-                const title = heroSection.querySelector('h1');
-                const description = heroSection.querySelector('p');
-                const image = heroSection.querySelector('.hero-img img');
-                const recipeLink = heroSection.querySelector('.recipe-link');
-    
-                if (title) title.textContent = 'Plat del mes';
-                if (description) description.innerHTML = 
-                    `${recipe.name}<br>Plat típic del mes de ${recipe.featuredMonth}`;
-                if (image) image.src = recipe.image;
-                if (recipeLink) recipeLink.dataset.recipeId = recipeId;
-            }
-        } else {
-            console.log('No featured recipe for current month');
-        }
     }
 
     initializeListeners() {
@@ -182,83 +163,11 @@ class RecipeHandler {
             .map(step => `<li>${step.text}</li>`)
             .join('');
 
-        this.displayReviews(recipeId);
+        this.reviewHandler.displayReviews(recipeId);
         modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
         
-        this.initMap(recipe.subjectOf);
+        this.mapHandler.initMap(recipe.subjectOf);
         this.modal.show();
-    }
-
-    initMap(restaurantData) {
-        if (!restaurantData) {
-            console.warn("No restaurant data available");
-            return;
-        }
-    
-        // Initialize map if not already done
-        if (!this.map) {
-            this.map = L.map('recipe-map').setView([39.6953, 3.0176], 10);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.map);
-        }
-    
-        // Clear existing markers
-        this.map.eachLayer((layer) => {
-            if (layer instanceof L.Marker) {
-                this.map.removeLayer(layer);
-            }
-        });
-    
-        // Handle single restaurant data from subjectOf
-        if (restaurantData['@type'] === 'Restaurant' && restaurantData.geo) {
-            try {
-                const marker = L.marker([
-                    parseFloat(restaurantData.geo.latitude),
-                    parseFloat(restaurantData.geo.longitude)
-                ]);
-    
-                const popupContent = `
-                    <div class="restaurant-popup">
-                        <h5>${restaurantData.name}</h5>
-                        ${restaurantData.address?.streetAddress ? 
-                            `<p>${restaurantData.address.streetAddress}, ${restaurantData.address.addressLocality}</p>` 
-                            : ''}
-                    </div>
-                `;
-    
-                marker.bindPopup(popupContent).addTo(this.map);
-            } catch (error) {
-                console.error('Error adding restaurant marker:', error);
-            }
-        }
-    }
-
-    displayReviews(recipeId) {
-        if (!this.reviews) {
-            console.error("Las reseñas no se han cargado correctamente.");
-            this.reviews = {}; // Evita futuros errores
-        }
-    
-        const reviewsContainer = document.querySelector('.reviews-container');
-        reviewsContainer.innerHTML = '';
-    
-        const reviews = Array.isArray(this.reviews[recipeId]) ? this.reviews[recipeId] : [];
-        
-        if (reviews.length === 0) {
-            reviewsContainer.innerHTML = '<p>No hi ha ressenyes encara.</p>';
-            return;
-        }
-    
-        reviewsContainer.innerHTML = reviews.map(review => {
-            const rating = review.reviewRating?.ratingValue ?? 0;
-            return `
-                <div class="review-item">
-                    <strong>${review.author}</strong> - 
-                    <span>${'⭐'.repeat(rating)}</span>
-                    <p>${review.reviewBody}</p>
-                </div>
-            `;
-        }).join('');
-        
     }
 
     shareRecipe() {

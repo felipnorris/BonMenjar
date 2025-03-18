@@ -40,22 +40,22 @@
                     "calories": "350 kcal",
                     "servingSize": "1 porció"
                 },
-               "temporal": null,
+                "temporal": null,
                 "subjectOf": {
-                        "@type": "Restaurant",
-                        "name": "Ca na Toneta",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "Carrer Major, 12",
-                            "addressLocality": "Palma",
-                            "addressRegion": "Illes Balears"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": 39.6953,
-                            "longitude": 3.0176
-                        }
+                    "@type": "Restaurant",
+                    "name": "Ca na Toneta",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Major, 12",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.6953,
+                        "longitude": 3.0176
                     }
+                }
             },
             "recipe-2": {
                 "@type": "Recipe",
