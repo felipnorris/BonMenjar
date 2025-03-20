@@ -505,18 +505,28 @@
               <div class="row mb-4">
                   <div class="col-md-6">
                       <img src="" alt="" class="img-fluid recipe-image rounded">
-                      <div class="recipe-description mt-3"></div>
-                      <div class="speech-controls mt-3">
-                        <button class="btn btn-primary speech-btn" data-type="description">
-                            <i class="bi bi-volume-up"></i>
-                            Escoltar recepta
+                      <h4 class="mb-4 d-flex align-items-center">
+                        Descripció
+                        <button class="btn btn-link ms-2 p-0 speech-btn" data-type="description">
+                          <i class="bi bi-volume-up fs-5"></i>
                         </button>
-                    </div>
+                      </h4>
+                      <div class="recipe-description mt-3"></div>
                   </div>
                   <div class="col-md-6">
-                      <h4>Ingredients</h4>
+                    <h4 class="d-flex align-items-center">
+                      Ingredients
+                      <button class="btn btn-link ms-2 p-0 speech-btn" data-type="ingredients">
+                        <i class="bi bi-volume-up fs-5"></i>
+                      </button>
+                    </h4>
                       <ul class="recipe-ingredients"></ul>
-                      <h4>Preparació</h4>
+                      <h4 class="d-flex align-items-center">
+                        Preparació
+                        <button class="btn btn-link ms-2 p-0 speech-btn" data-type="instructions">
+                          <i class="bi bi-volume-up fs-5"></i>
+                        </button>
+                      </h4>
                       <div class="recipe-instructions"></div>
                   </div>
               </div>

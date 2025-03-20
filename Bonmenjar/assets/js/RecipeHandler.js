@@ -1,6 +1,7 @@
 import { MapHandler } from './modules/MapHandler.js';
 import { ReviewHandler } from './modules/ReviewHandler.js';
 import { FeaturedRecipeHandler } from './modules/FeaturedRecipeHandler.js';
+import { SpeechHandler } from './modules/SpeechHandler.js';
 
 class RecipeHandler {
     constructor() {
@@ -8,6 +9,7 @@ class RecipeHandler {
         this.mapHandler = new MapHandler();
         this.reviewHandler = new ReviewHandler();
         this.featuredHandler = new FeaturedRecipeHandler();
+        this.speechHandler = new SpeechHandler();
         this.currentRecipeId = null;
         this.recipes = {};
 
@@ -167,6 +169,9 @@ class RecipeHandler {
         modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
         
         this.mapHandler.initMap(recipe.subjectOf);
+
+        this.speechHandler.initializeSpeechButtons(modal);
+        
         this.modal.show();
     }
 

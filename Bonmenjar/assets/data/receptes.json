@@ -74,29 +74,60 @@
                 "totalTime": "PT1H45M",
                 "recipeYield": "4 persones",
                 "recipeIngredient": [
-                    "1kg de caragols",
-                    "4 alls",
-                    "1 manat de julivert",
-                    "Pebre vermell",
-                    "Oli d'oliva",
-                    "Sal"
+                    "2kg de caragols congelats",
+                    "300g de costella de porc",
+                    "1/4 de pollastre",
+                    "1/4 de conill",
+                    "2 botifarrons",
+                    "2 cebes blanques",
+                    "2 tomàquets",
+                    "2 pastilles de brou",
+                    "2 manats d'herbes aromàtiques",
+                    "1 tros de pernil",
+                    "1 tassó de vi blanc",
+                    "Sal i pebre",
+                    "Oli d'oliva"
                 ],
                 "recipeInstructions": [
                     {
                         "@type": "HowToStep",
-                        "text": "Netejar els caragols amb aigua i sal"
+                        "text": "Rentar bé les carns i tallar-les a trossos. Eixugar-les amb paper de cuina"
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Deixar-los en dejú durant 24 hores"
+                        "text": "Tallar la ceba en brunoise i pelar el tomàquet i els alls"
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Bullir-los amb herbes aromàtiques"
+                        "text": "En una cassola amb oli d'oliva, sofregir la ceba picada"
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Preparar la salsa d'all i julivert"
+                        "text": "Quan la ceba estigui pochada, afegir el tomàquet pelat i cuinar a foc lent"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Netejar els caragols molt bé. En una olla amb aigua freda, cuinar-los a foc mitjà. Quan comencin a bullir, deixar tres minuts i treure l'aigua"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Posar aigua neta i afegir les herbes aromàtiques. Bullir aproximadament una hora"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "A la cassola amb la ceba i el tomàquet, afegir totes les carns, el pernil trossejat i els botifarrons. Barrejar i afegir el brou de pollastre"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorporar el vi blanc i les fulles de llorer. Cuinar fins que s'evapori l'alcohol"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Quan els caragols estiguin llestos, passar-los a l'olla amb el guisat. Incorporar el brou dels caragols per donar-li el gust d'herbes"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir sal i pebre, cuinar cinc minuts més i retirar les herbes. Cuinar uns minuts més i servir"
                     }
                 ],
                 "video": {
