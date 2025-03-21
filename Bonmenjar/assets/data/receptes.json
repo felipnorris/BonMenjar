@@ -6,7 +6,7 @@
                 "@type": "Recipe",
                 "name": "Frit Mallorquí",
                 "image": "assets/img/menu/frit-mallorqui.jpg",
-                "description": "Plat tradicional mallorquí elaborat amb fetge i altres vísceres, típic dels matins de matances.",
+                "description": "Quan proves el frit mallorquí, el plat tradicional balear per excel·lència, entens el perquè de la seva popularitat i els seus segles d’història. La recepta té origen en la cultura sefardí, de les costums culinàries dels que viuen o descendeixen dels jueus procedents d’Espanya, amb influencies clares de la cuina àrab i turca. Una barreja de sabors que combina el xai, la patata i les verdures fregides, acabades amb un toc de laurel. Assaboreix la màxima expresso i cultura mallorquina amb aquesta recepta, que conta amb totes les avantatges de la saludable i completa mediterrània.",
                 "author": {
                     "@type": "Organization",
                     "name": "BonMenjar"
@@ -14,21 +14,44 @@
                 "datePublished": "2024-03-15",
                 "recipeCategory": "entrants",
                 "recipeCuisine": "Balear",
-                "prepTime": "PT20M",
-                "cookTime": "PT30M",
-                "totalTime": "PT50M",
+                "totalTime": "PT1H",
                 "recipeYield": "4 persones",
                 "recipeIngredient": [
-                    "500g fetge de xai",
-                    "2 patates",
-                    "2 pebrots vermells",
-                    "Oli d'oliva",
-                    "Sal i pebre"
+                    "1/2 fetge de xot",
+                    "1 cor de xot",
+                    "1 pulmó de xot",
+                    "3 patates mitjanes",
+                    "2 pebrots vermells mitjans",
+                    "200 g de coliflor",
+                    "150 g de pèsols",
+                    "1 manat de ceba tendra",
+                    "1 fonoll",
+                    "7 grans d'all",
+                    "Oli d'Oliva Verge Extra",
+                    "5 fulles de llorer",
+                    "Sal",
+                    "Pebre"
                 ],
                 "recipeInstructions": [
                     {
                         "@type": "HowToStep",
-                        "text": "Tallar el fetge a daus petits..."
+                        "text": "Fregir la patata tallada a trossos, salar i reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Fregir el pebrot trossejat i reservar amb les patates. Després, fer el mateix amb la coliflor."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Fregir el fetge, el cor i el pulmó per separat, i afegir-ho a les verdures fregides."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Saltar els grans d'all sencers amb la pell, havent-los donat un cop prèviament. Afegir la ceba tendra tallada petita. Afegir les fulles de llorer i els pèsols. Salpebrar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Ajuntar tots els ingredients, mesclar-los, emplatar i escampar una mica de fonoll per sobre.."
                     }
                 ],
                 "video": {
@@ -69,8 +92,6 @@
                 "datePublished": "2024-03-15",
                 "recipeCategory": "principals",
                 "recipeCuisine": "Balear",
-                "prepTime": "PT1H",
-                "cookTime": "PT45M",
                 "totalTime": "PT1H45M",
                 "recipeYield": "4 persones",
                 "recipeIngredient": [
