@@ -283,6 +283,174 @@
                         "longitude": 3.0176
                     }
                 }
+            },
+            "recipe-4": {
+                "@type": "Recipe",
+                "name": "Tumbet",
+                "image": "assets/img/menu/tumbet.jpg",
+                "description": "El Tumbet és un plat típic de Mallorca que consisteix en una capa de patates, albergínies i pebrots fregits, coberts amb una salsa de tomàquet. És un plat molt saborós i saludable.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H30M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "4 patates",
+                    "2 albergínies",
+                    "2 pebrots vermells",
+                    "2 tomàquets",
+                    "2 dents d'all",
+                    "Oli d'oliva",
+                    "Sal",
+                    "Pebre"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pelar i tallar les patates en rodanxes fines. Fregir-les en oli d'oliva fins que estiguin daurades. Escórrer-les i reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Tallar les albergínies en rodanxes i fregir-les en oli d'oliva. Escórrer-les i reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Tallar els pebrots en tires i fregir-los en oli d'oliva. Escórrer-los i reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Preparar la salsa de tomàquet: picar els tomàquets i les dents d'all, i cuinar-los en una paella amb una mica d'oli d'oliva fins que es formi una salsa."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "En una cassola, col·locar una capa de patates, una capa d'albergínies i una capa de pebrots. Cobrir amb la salsa de tomàquet."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Coure al forn preescalfat a 180°C durant 20 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Servir calent."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/embed/example2"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "300 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "juny",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Celler Ca'n Ripoll",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer d'en Jaume Armengol, 4",
+                        "addressLocality": "Inca",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7205505,
+                        "longitude":2.9088065
+                    }
+                }
+            },
+            "recipe-5": {
+                "@type": "Recipe",
+                "name": "Cardenal de Lloseta",
+                "image": "assets/img/menu/cardenal-lloseta.jpg",
+                "description": "El Cardenal de Lloseta és un postre típic de Mallorca, fet amb merenga, nata i pa de pessic. És un postre molt dolç i tradicional.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "postres",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT45M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "500 ml de nata",
+                    "4 cullerades de sucre",
+                    "3 ous",
+                    "mig tassó de llet",
+                    "100 grams de sucre",
+                    "75 grams de farina",
+                    "mig sobre de llevat en pols",
+                    "5 clares d'ou"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Posar la nata freda en un bol, afegir quatre cullerades de sucre i muntar-la. Reservar a la nevera."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Separar les clares i els rovells en dos recipients. Muntar les clares a punt de neu."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir el sucre als rovells i batre fins que blanquegi. Incorporar la llet, la farina i el llevat en pols mentre es bat."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorporar les clares muntades amb moviments envoltants."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Abocar la barreja en una safata de forn folrada amb paper vegetal i coure a 160ºC durant 15 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Preparar el merenga: escalfar al bany maria el sucre amb les clares, remenant fins que blanquegi. Muntar la barreja i posar-la en una mànega pastissera."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Sobre tires de paper vegetal en una safata, fer tires de merenga amb la mànega pastissera. Coure al forn a 160ºC durant 15 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Per muntar el cardenal: posar una de les tires de merenga, afegir el pa de pessic tallat a la mateixa mida."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Untar la part superior del pa de pessic amb nata i col·locar a sobre les altres tires de merenga i pa de pessic per formar una mena d'entrepà."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/embed/example3"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "400 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "novembre",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Celler Sa Plaça",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Esglèsia, 16",
+                        "addressLocality": "Lloseta",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude":2.8648221
+                    }
+                }
             }
         }
     ]
