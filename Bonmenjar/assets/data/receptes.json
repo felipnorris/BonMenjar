@@ -176,6 +176,113 @@
                         "longitude": 3.0176
                     }
                 }
+            },
+            "recipe-3":{
+                "@type": "Recipe",
+                "name": "Sopes Mallorquines",
+                "image": "assets/img/menu/sopes_mallorquines.jpg",
+                "description": "Les sopes mallorquines son uns dels plats més emblemàtics de la gastronomia balear, és tipic de l'hivern i destaca per la seva senzillesa.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2025-03-22",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H15M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "400g de pa de sopes",
+                    "100g grams de xuia",
+                    "100g de bolets",
+                    "2 botifarrons",
+                    "1 cebes blanques",
+                    "2 tomàquets",
+                    "2 pebrots verds",
+                    "2 alls",
+                    "1L de brou (vegetal o de carn)",
+                    "1 tassó de vi blanc",
+                    "1 cullerada de pebre vermell dolç",
+                    "Sal i pebre",
+                    "Oli d'oliva",
+                    "Juliverd fresc"
+                    
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Picar la ceba i els alls."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Tallar el pebrot verd, els tomàquets sense pell i la col a tires fines."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Netejar i tallar els bolets"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Escalfar un raig d'oli idns una cassola."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir la ceba i els alls i sofregir fins que quedi transparent."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir el pebrot i el tomàquets i cuinar-los fins que es confitin."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir el pebre vermell dolç i remanar per evitar que es cremi."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir la col i els bolets, sofregir uns minuts i afegir el brou calent."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir la sal i el pebre bo al gust i deixar coure a foc lent 15 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Retirar la cassola del foc i per sobre, repartir en capes el pa de sopes."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixar reposar un 10 minuts per que el pa absorbeixi el brou."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Decorar amb juliverd fresc picat i afegir un raig d'oli."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/watch?v=tHI46NhXYho"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "350 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "gener",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca na Toneta",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Major, 12",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.6953,
+                        "longitude": 3.0176
+                    }
+                }
             }
         }
     ]

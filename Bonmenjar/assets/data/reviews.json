@@ -31,6 +31,18 @@
                 "ratingValue": 3
             },
             "reviewBody": "No està malament, però no és el meu preferit."
+        },
+        {
+            "id": "review-4",
+            "author": "Jaume",
+            "itemReviewed": "recipe-3",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "Senzill, gustos i elegant."
         }
+        
+        
     ]
 }
