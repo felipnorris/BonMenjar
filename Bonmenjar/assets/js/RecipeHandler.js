@@ -9,7 +9,7 @@ export class RecipeHandler {
         this.mapHandler = new MapHandler();
         this.reviewHandler = new ReviewHandler();
         this.featuredHandler = new FeaturedRecipeHandler();
-        this.speechHandler = new SpeechHandler();
+        this.speechHandler = new SpeechHandler('#recipeModal');
         this.currentRecipeId = null;
         this.recipes = {};
         this.searchDebounceTimer = null;
