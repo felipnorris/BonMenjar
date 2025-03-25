@@ -1185,85 +1185,145 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Testimonials Section
+# Testimonials Section 
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
+.testimonials {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.testimonials .testimonial-item .testimonial-content {
-  border-left: 3px solid var(--accent-color);
-  padding-left: 30px;
+.testimonials h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #d11f1f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
-  margin: 0 auto;
+.testimonials .testimonial-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .testimonial-item h3 {
+.testimonials .testimonial-quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+  position: relative;
+  padding: 20px;
+  border-left: 4px solid #d11f1f;
+  text-align: left;
+  max-width: 700px;
+}
+
+.testimonials .quote-icon {
+  font-size: 30px;
+  color: #d11f1f;
+  position: absolute;
+}
+
+.testimonials .quote-icon-left {
+  left: -10px;
+  top: -10px;
+}
+
+.testimonials .quote-icon-right {
+  right: -10px;
+  bottom: -10px;
+}
+
+.testimonials .testimonial-author {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  color: #222;
+  margin-top: 10px;
 }
 
-.testimonials .testimonial-item h4 {
+.testimonials .testimonial-role {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0 0 10px 0;
+  color: #777;
+  text-transform: uppercase;
 }
 
-.testimonials .testimonial-item .stars i {
+.testimonials .testimonial-stars {
   color: #ffc107;
-  margin: 0 1px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
+.testimonials .testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+.testimonials .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 5px;
   opacity: 1;
+  transition: all 0.3s;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+.testimonials .swiper-pagination-bullet-active {
+  background-color: #d11f1f;
+  transform: scale(1.3);
 }
+
+/* Ajuste de los botones de navegación para que no se superpongan */
+.testimonials .swiper {
+  position: relative; /* Contenedor swiper con posición relativa */
+}
+
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
+  color: var(--accent-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%); /* Centra los botones verticalmente */
+  z-index: 10; /* Asegura que los botones estén por encima del contenido */
+}
+
+.testimonials .testimonial-item .recipe-img {
+  width: 150px; /* Asegura que todas las imágenes tengan el mismo tamaño */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimonials .view-recipe-btn {
+  align-self: flex-start;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px; /* Botón más redondeado */
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.testimonials .view-recipe-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /*--------------------------------------------------------------
 # Events Section

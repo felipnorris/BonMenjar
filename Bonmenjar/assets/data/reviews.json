@@ -10,7 +10,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "Deliciós! M'ha encantat aquest plat."
+            "reviewBody": "Deliciós! M'ha encantat aquest plat. El Frit Mallorquí és la millor manera de gaudir de la cuina tradicional."
         },
         {
             "id": "review-2",
@@ -20,7 +20,7 @@
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "Molt bo, però una mica salat."
+            "reviewBody": "Molt bo, però una mica salat. La combinació de sabors és perfecta, però recomano posar menys sal."
         },
         {
             "id": "review-3",
@@ -30,7 +30,7 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "No està malament, però no és el meu preferit."
+            "reviewBody": "No està malament, però no és el meu preferit. Els caragols estaven una mica durs."
         },
         {
             "id": "review-4",
@@ -40,9 +40,87 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "Senzill, gustos i elegant."
+            "reviewBody": "Senzill, gustos i elegant. Les sopes mallorquines són el plat perfecte per a l'hivern."
+        },
+        {
+            "id": "review-5",
+            "author": "Antònia",
+            "itemReviewed": "recipe-4",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "El Tumbet és espectacular! Les verdures estaven en el seu punt perfecte. Recomano fer-ho amb pa fresc."
+        },
+        {
+            "id": "review-6",
+            "author": "Biel",
+            "itemReviewed": "recipe-5",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "El Cardenal de Lloseta és un postre increïble. Dolç però no empalagós. Perfecte per acabar un àpat."
+        },
+        {
+            "id": "review-7",
+            "author": "Caterina",
+            "itemReviewed": "recipe-1",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "El millor Frit Mallorquí que he tastat mai. La combinació de vísceres i verdures és perfecta."
+        },
+        {
+            "id": "review-8",
+            "author": "Damià",
+            "itemReviewed": "recipe-3",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Les sopes mallorquines em van recordar a la meva infantesa. Un plat reconfortant i deliciós."
+        },
+        {
+            "id": "review-9",
+            "author": "Eva",
+            "itemReviewed": "recipe-2",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2
+            },
+            "reviewBody": "Els caragols no eren del meu gust. Potser necessiten més temps de cocció."
+        },
+        {
+            "id": "review-10",
+            "author": "Francesc",
+            "itemReviewed": "recipe-4",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "El Tumbet és la meva debilitat. Cada vegada que visito Mallorca el demano a tots els restaurants!"
+        },
+        {
+            "id": "review-11",
+            "author": "Gabriela",
+            "itemReviewed": "recipe-5",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "El Cardenal és simplement perfecte. La merenga està en el punt exacte de sucre i lleugeresa."
+        },
+        {
+            "id": "review-12",
+            "author": "Hèctor",
+            "itemReviewed": "recipe-1",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Boníssim Frit Mallorquí, tot i que m'agradaria veure una versió una mica més lleugera."
         }
-        
-        
     ]
 }
