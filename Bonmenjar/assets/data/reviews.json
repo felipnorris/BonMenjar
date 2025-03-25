@@ -10,7 +10,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "Deliciós! M'ha encantat aquest plat. El Frit Mallorquí és la millor manera de gaudir de la cuina tradicional."
+            "reviewBody": "Deliciós! M'ha encantat aquest plat."
         },
         {
             "id": "review-2",
@@ -20,7 +20,7 @@
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "Molt bo, però una mica salat. La combinació de sabors és perfecta, però recomano posar menys sal."
+            "reviewBody": "Molt bo, però una mica salat."
         },
         {
             "id": "review-3",
@@ -30,7 +30,7 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "No està malament, però no és el meu preferit. Els caragols estaven una mica durs."
+            "reviewBody": "No està malament, però no és el meu preferit."
         },
         {
             "id": "review-4",
@@ -40,6 +40,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
+            
             "reviewBody": "Senzill, gustos i elegant. Les sopes mallorquines són el plat perfecte per a l'hivern."
         },
         {
@@ -121,6 +122,67 @@
                 "ratingValue": 4
             },
             "reviewBody": "Boníssim Frit Mallorquí, tot i que m'agradaria veure una versió una mica més lleugera."
+        },
+        {
+            "id": "review-13",
+            "author": "Tolo",
+            "itemReviewed": "recipe-6",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Bo i senzill."
+        },
+        {
+            "id": "review-14",
+            "author": "Joan",
+            "itemReviewed": "recipe-6",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3
+            },
+            "reviewBody": "No està malament, però molt bàsic"
+        },
+        {
+            "id": "review-15",
+            "author": "Miquel",
+            "itemReviewed": "recipe-7",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "Espectacular. Molt bò i variat"
+        },
+        {
+            "id": "review-16",
+            "author": "Jordi",
+            "itemReviewed": "recipe-4",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Bo i original."
+        },
+        {
+            "id": "review-17",
+            "author": "Joana",
+            "itemReviewed": "recipe-5",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3
+            },
+            "reviewBody": "Massa dolç i empalagos"
+        },
+        {
+            "id": "review-18",
+            "author": "Joan",
+            "itemReviewed": "recipe-5",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "Espectacular, textura i gust"
         }
+        
     ]
 }

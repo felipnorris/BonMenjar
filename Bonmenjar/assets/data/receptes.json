@@ -451,6 +451,231 @@
                         "longitude":2.8648221
                     }
                 }
+            },
+            "recipe-6":{
+                "name": "Coca de Trampó",
+                "image": "assets/img/menu/coca-de-trempo.jpg",
+                "description": "La coca de trampó és un plat tradicional de Mallorca.És una coca lleugera i mediterrània, perfecta per als mesos d'estiu.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "entrants",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H30M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "300g de farina",
+                    "100ml d'aigua tèbia",
+                    "100ml d'oli d'oliva",
+                    "10g de llevat",
+                    "Sal",
+                    "1 pebrot verd",
+                    "1 pebrot vermell",
+                    "1 ceba",
+                    "Pebre bo"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "En un bol gran, barreja l’aigua tèbia amb el llevat fins que es dissolgui completament."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix l’oli d’oliva i un polsim de sal. Remena bé."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorpora la farina a poc a poc mentre vas barrejant amb les mans o amb una espàtula."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Amasa fins a obtenir una massa suau i homogènia."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Forma una bola i deixa-la reposar tapada amb un drap net durant uns 30-40 minuts fins que dobli el volum."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Talla els tomàquets i els pebrots a daus petits.Talla la ceba a làmines fines o també a daus."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Posa-ho tot en un bol, afegeix sal, pebre bo i un raig d’oli d’oliva. Remena bé."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Preescalfa el forn a 180 °C."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Estira la massa sobre una safata de forn folrada amb paper de forn, donant-li forma rectangular i deixant un gruix d’uns 5 mm."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Reparteix el trampó uniformement per sobre de la massa."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Introdueix la coca al forn i enforna durant 30-35 minuts fins que la massa estigui daurada i cruixent."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Treu la coca del forn i deixa-la refredar una mica abans de tallar-la."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/watch?v=6AC_T-dkDD8"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "250 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "juny",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Forn Can Amer",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Mossèn Galmés, 76",
+                        "addressLocality": "Sant Llorenç des Cardassar",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude":2.8648221
+                    }
+                }
+            },
+            "recipe-7":{
+                "name": "arros_brut",
+                "image": "assets/img/menu/arros-brut.jpg",
+                "description": "L’arròs brut és un plat tradicional de Mallorca, calent, melós i especiat, ideal per als mesos freds.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H15M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "300g d'arròs bomba",
+                    "1L de brou pollastre",
+                    "2 cuixes de pollastre",
+                    "200g de costella de porc",
+                    "200g de conill a trossos",
+                    "100g de botifarró",
+                    "1 tomàquet",
+                    "1 pebrot",
+                    "1 ceba",
+                    "2 grans d'all",
+                    "50 ml d'oli",
+                    "Sal i pebre al gust",
+                    "1 fulla de llorer",
+                    "1/2 cullerada de canyella en pols",
+                    "1/2 cullerada de pebre vermell dolç",
+                    "1/2 cullerada de pebre negre mòlt",
+                    "1 pessic de nou moscada",
+                    "1 branca de safrà"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pela i pica la ceba i els alls ben petits."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Talla el pebrot verd a trossets."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Ralla o pela el tomàquet i reserva’l"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Neteja i talla els bolets en làmines."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Talla el botifarró a rodanxes."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "En una cassola ampla o greixonera, escalfa l’oli d’oliva a foc mig-alt."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix el pollastre, la costella de porc i el conill. Sofregeix fins que quedin daurats per totes bandes."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorpora la ceba i l’all picats i remena bé. Quan la ceba sigui transparent, afegeix el pebrot verd i el tomàquet ratllat."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Cuina a foc mitjà durant uns 10 minuts fins que el sofregit estigui ben fet."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix les espècies (canyella, pebre vermell, pebre negre, nou moscada, llorer i safrà). Remena bé perquè alliberin el seu aroma."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorpora els bolets i cuina durant 2-3 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix l’arròs i barreja bé amb els altres ingredients perquè agafi sabor."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix el brou ben calent. Remena i deixa coure a foc mitjà durant 18-20 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Als 10 minuts de cocció, afegeix el botifarró a rodanxes."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Corregeix de sal si cal. L’arròs ha de quedar melós i amb brou abundant."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixa reposar 2-3 minuts i serveix l'arròs ben calent."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/watch?v=_N-quqPKzbM"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "450 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "octubre",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Es Cruce",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carretera de Palma, 0, 07250",
+                        "addressLocality": "Villafranca de Bonany",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude":2.8648221
+                    }
+                }
             }
         }
     ]
