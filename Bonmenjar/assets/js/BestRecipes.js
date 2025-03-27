@@ -103,7 +103,7 @@ export class BestRecipes {
                                 <button class="btn btn-primary mt-3 view-recipe-btn" 
                                         data-category="${recipe.category}"
                                         data-id="${recipe.id}">
-                                    Ver receta completa
+                                    Veure recepta completa
                                 </button>
                             </div>
                         </div>
@@ -153,10 +153,6 @@ export class BestRecipes {
                 el: '.testimonials .swiper-pagination',
                 type: 'bullets',
                 clickable: true
-            },
-            navigation: {
-                nextEl: '.testimonials .swiper-button-next',
-                prevEl: '.testimonials .swiper-button-prev'
             }
         });
     }
