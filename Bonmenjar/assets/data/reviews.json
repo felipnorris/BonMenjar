@@ -182,6 +182,46 @@
                 "ratingValue": 5
             },
             "reviewBody": "Espectacular, textura i gust"
+        },
+        {
+            "id": "review-19",
+            "author": "Joan",
+            "itemReviewed": "recipe-8",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "Sempre que vaig a Mallorca en beren tots els matins"
+        },
+        {
+            "id": "review-20",
+            "author": "Sebestià",
+            "itemReviewed": "recipe-9",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "És, ideal per l'estiu, m'encanta"
+        },
+        {
+            "id": "review-21",
+            "author": "Sebestià",
+            "itemReviewed": "recipe-8",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3
+            },
+            "reviewBody": "Simple i molt bàsica, m'agrada més l'ensaimada farcida."
+        },
+        {
+            "id": "review-22",
+            "author": "Jordi",
+            "itemReviewed": "recipe-9",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Bona textura, pero molt empalagos."
         }
         
     ]

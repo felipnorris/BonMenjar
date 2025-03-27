@@ -180,7 +180,7 @@
             "recipe-3":{
                 "@type": "Recipe",
                 "name": "Sopes Mallorquines",
-                "image": "assets/img/menu/sopes_mallorquines.jpg",
+                "image": "assets/img/menu/sopes-mallorquines.jpg",
                 "description": "Les sopes mallorquines son uns dels plats més emblemàtics de la gastronomia balear, és tipic de l'hivern i destaca per la seva senzillesa.",
                 "author": {
                     "@type": "Organization",
@@ -553,7 +553,7 @@
                 }
             },
             "recipe-7":{
-                "name": "arros_brut",
+                "name": "Arròs Brut",
                 "image": "assets/img/menu/arros-brut.jpg",
                 "description": "L’arròs brut és un plat tradicional de Mallorca, calent, melós i especiat, ideal per als mesos freds.",
                 "author": {
@@ -668,6 +668,202 @@
                         "@type": "PostalAddress",
                         "streetAddress": "Carretera de Palma, 0, 07250",
                         "addressLocality": "Villafranca de Bonany",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude":2.8648221
+                    }
+                }
+            },
+            "recipe-8":{
+                "name": "Ensaïmada",
+                "image": "assets/img/menu/ensaimada.jpg",
+                "description": " L’ensaïmada mallorquina és un dolç tradicional, ideal per esmorzars i berenars.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "postres",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H20M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "500g de farina de força",
+                    "100g de sucre",
+                    "10g de sal",
+                    "200g de llevat fresc",
+                    "200ml d'aigua tèbia",
+                    "150g de saïm",
+                    "2 ous",
+                    "Sucre glacé"  
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "En un bol gran, barreja la farina amb el sucre i la sal."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Dissol el llevat en l’aigua tèbia i afegeix-ho al bol."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix els ous i amassa fins a obtenir una massa homogènia i elàstica ."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Cobreix la massa amb un drap i deixa-la reposar 30 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Passat el repòs, estén la massa sobre una superfície enfarinada."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Amb un corró, estira-la fins que quedi molt fina."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Unta tota la superfície amb el saïm"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Enrotlla la massa fent un cilindre llarg. Forma una espiral deixant espai entre les voltes"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Col·loca l’ensaïmada en una safata amb paper de forn."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixa-la reposar a temperatura ambient entre 12 i 24 hores"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Preescalfa el forn a 180 °C"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Enforna l’ensaïmada uns 12-15 minuts, fins que estigui daurada."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixa-la refredar i empolvora sucre glacé per sobre."
+                    }
+                    
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/watch?v=bE1BUMSqD-A"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "350 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": null,
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca'n Joan de S'Aigo",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre,5 07012",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude":2.8648221
+                    }
+                }
+            },
+            "recipe-9":{
+                "name": "Gató",
+                "image": "assets/img/menu/gato-ametlla.jpg",
+                "description": "El gató mallorquí és un pastís esponjós i aromàtic fet amb ametlla, perfecte per acompanyar amb gelat",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "postres",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H15M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "250g d'amatella molta'",
+                    "200g de sucre",
+                    "Ratlladura de llimona",
+                    "200ml d'aigua tèbia",
+                    "1 cullarada de canyella",
+                    "6 ous",
+                    "Sucre glacé"  
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Separa els rovells de les clares en dos bols diferents."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Bat els rovells amb el sucre fins que blanquegin i augmentin de volum."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix-hi la ratlladura de llimona i la canyella."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorpora l’ametlla molta i barreja suaument."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Bat les clares a punt de neu fins que quedin fermes."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegeix-les a la barreja anterior, amb moviments suaus i envoltants per mantenir l’aire."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Preescalfa el forn a 180 °C."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Unta un motlle amb mantega i aboca-hi la massa."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Forneja durant 30-40 minuts, fins que estigui daurat i al punxar-lo amb un escuradents surti net."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixa'l refredar i empolvora sucre glacé per sobre."
+                    }
+                
+                    
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/watch?v=PySxyhF3dC0"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "500 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "agost",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca'n Joan de S'Aigo",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre, 5 07012",
+                        "addressLocality": "Palma",
                         "addressRegion": "Illes Balears"
                     },
                     "geo": {
