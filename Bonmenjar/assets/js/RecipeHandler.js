@@ -78,10 +78,11 @@ export class RecipeHandler {
 
     formatTime(isoTime) {
         if (!isoTime) return 'N/A';
-        const match = isoTime.match(/PT(?:(\d+)H)?(?:(\d+)M)?/);
-        const hours = match[1] ? `${match[1]}h` : '';
-        const minutes = match[2] ? `${match[2]}min` : '';
-        return `${hours} ${minutes}`.trim();
+        const match = isoTime.match(/PT(?:(\d+)D)?(?:(\d+)H)?(?:(\d+)M)?/);
+        const days = match[1] ? `${match[1]}d` : '';
+        const hours = match[2] ? `${match[2]}h` : '';
+        const minutes = match[3] ? `${match[3]}min` : '';
+        return `${days} ${hours} ${minutes}`.trim();
     }
 
     initializeListeners() {

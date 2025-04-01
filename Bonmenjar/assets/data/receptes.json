@@ -872,6 +872,158 @@
                         "longitude":2.8648221
                     }
                 }
+            },
+            "recipe-10": {
+                "@type": "Recipe",
+                "name": "Frit de Pasqua",
+                "image": "assets/img/menu/frit-pasqua.jpg",
+                "description": "El Frit de Pasqua és un plat tradicional de la gastronomia balear que es consumeix especialment durant Setmana Santa. Aquesta recepta combina carn de be amb verdures fresques, donant lloc a un plat saborós i típicament mediterrani.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2025-04-01",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "500 g de carn de be (costella, espatlla o fetge)",
+                    "1 manat d’alls tendres",
+                    "2 patates grosses",
+                    "1 pebrot vermell",
+                    "1 pebrot verd",
+                    "1 ceba grossa",
+                    "1 manat de fonoll (opcional)",
+                    "100 g de pèsols (opcional)",
+                    "Oli d’oliva verge extra",
+                    "Sal i pebre negre al gust",
+                    "1 fulla de llorer (opcional)"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pelar i tallar les patates a daus petits i fregir-les en abundant oli fins que estiguin daurades. Retirar i reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "A la mateixa paella, fregir la carn de be tallada a trossets fins que estigui ben daurada. Reservar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir els alls tendres tallats, la ceba, els pebrots i el fonoll (si es fa servir) a la mateixa paella. Sofregir fins que estiguin tendres."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorporar la carn fregida i barrejar bé."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir les patates fregides i, si es vol, els pèsols. Remenar perquè es mesclin els sabors i rectificar de sal i pebre."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixar coure uns minuts més i servir calent."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/embed/example"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "400 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "abril",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca na Toneta",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Major, 12",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.6953,
+                        "longitude": 3.0176
+                    }
+                }
+            },
+            "recipe-11": {
+                "@type": "Recipe",
+                "name": "Herbes Dolces",
+                "image": "assets/img/menu/herbes-dolces.webp",
+                "description": "Les Herbes Dolces són un licor tradicional de les Illes Balears, elaborat amb una combinació d’herbes aromàtiques macerades en anís dolç. És una beguda típica de les celebracions i àpats festius.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2025-04-01",
+                "recipeCategory": "begudes",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT10D",
+                "recipeYield": "1 litre",
+                "recipeIngredient": [
+                    "1 litre d’anís dolç",
+                    "1 branca de romaní",
+                    "1 branca de farigola",
+                    "1 branca de fonoll",
+                    "Fulles de tarongina",
+                    "Fulles de menta",
+                    "Fulles de marialluïsa",
+                    "Pell de llimona",
+                    "Pell de taronja"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Rentau bé les herbes aromàtiques i deixeu-les assecar."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Introduïu totes les herbes i les pells de cítrics dins una ampolla gran de vidre."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegiu l’anís dolç i tapau l’ampolla hermèticament."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixau macerar durant 10 dies en un lloc fosc i fresc, remenant suaument cada dia."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Passats els 10 dies, colau el líquid i traspassau-lo a una ampolla neta per conservar-lo."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/embed/example"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "250 kcal",
+                    "servingSize": "100 ml"
+                },
+                "temporal": null,
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca na Toneta",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Major, 12",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.6953,
+                        "longitude": 3.0176
+                    }
+                }
             }
         }
     ]

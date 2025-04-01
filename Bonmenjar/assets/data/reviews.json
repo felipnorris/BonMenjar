@@ -222,7 +222,16 @@
                 "ratingValue": 4
             },
             "reviewBody": "Bona textura, pero molt empalagos."
+        },
+        {
+            "id": "review-23",
+            "author": "Tomeu",
+            "itemReviewed": "recipe-11",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3
+            },
+            "reviewBody": "Per la meva experiència, el temps de repòs hauria de ser, almenys, d'uns 30 dies."
         }
-        
     ]
 }
