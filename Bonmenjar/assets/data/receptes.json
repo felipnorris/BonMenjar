@@ -888,47 +888,52 @@
                 "totalTime": "PT1H",
                 "recipeYield": "4 persones",
                 "recipeIngredient": [
-                    "500 g de carn de be (costella, espatlla o fetge)",
-                    "1 manat d’alls tendres",
-                    "2 patates grosses",
-                    "1 pebrot vermell",
-                    "1 pebrot verd",
-                    "1 ceba grossa",
-                    "1 manat de fonoll (opcional)",
-                    "100 g de pèsols (opcional)",
-                    "Oli d’oliva verge extra",
-                    "Sal i pebre negre al gust",
-                    "1 fulla de llorer (opcional)"
+                    "Freixura de xot (fetge, pulmó, cor i sang)",
+                    "3 patates grosses",
+                    "2 pebrots vermells",
+                    "300 g de coliflor",
+                    "150 g de pèsols",
+                    "1 manat de cebes tendres",
+                    "Fonoll fresc",
+                    "6 grans d'all",
+                    "3 fulles de llorer",
+                    "Oli d'oliva",
+                    "Sal",
+                    "Pebre negre"
                 ],
                 "recipeInstructions": [
                     {
                         "@type": "HowToStep",
-                        "text": "Pelar i tallar les patates a daus petits i fregir-les en abundant oli fins que estiguin daurades. Retirar i reservar."
+                        "text": "Tallau tots els ingredients en daus."
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "A la mateixa paella, fregir la carn de be tallada a trossets fins que estigui ben daurada. Reservar."
+                        "text": "En una paella amb abundant oli, anirem fregint tots els ingredients per tandes."
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Afegir els alls tendres tallats, la ceba, els pebrots i el fonoll (si es fa servir) a la mateixa paella. Sofregir fins que estiguin tendres."
+                        "text": "Primer les patates, després els pebrots, la coliflor i finalment la freixura de xot."
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Incorporar la carn fregida i barrejar bé."
+                        "text": "A mesura que anem fregint els ingredients els reservam en una greixonera."
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Afegir les patates fregides i, si es vol, els pèsols. Remenar perquè es mesclin els sabors i rectificar de sal i pebre."
+                        "text": "Per últim, fregim en la paella els alls, prèviament matxucats, i la ceba tendra."
                     },
                     {
                         "@type": "HowToStep",
-                        "text": "Deixar coure uns minuts més i servir calent."
+                        "text": "Una vegada sofregits afegim el fonoll, el llorer, els pèsols i la sang."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Finalment ho mesclam tot en la greixonera i posam un poc més de fonoll per sobre."
                     }
                 ],
                 "video": {
                     "@type": "VideoObject",
-                    "contentUrl": "https://www.youtube.com/embed/example"
+                    "contentUrl": "https://www.youtube.com/watch?v=pe6chyYiOI8&ab_channel=RecetasMallorquinas"
                 },
                 "nutrition": {
                     "@type": "NutritionInformation",

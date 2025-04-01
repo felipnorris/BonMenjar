@@ -13,6 +13,7 @@ export class RecipeHandler {
         this.currentRecipeId = null;
         this.recipes = {};
         this.searchDebounceTimer = null;
+        this.player = null;
 
         this.init();
     }
@@ -117,6 +118,12 @@ export class RecipeHandler {
             form.reset();
         });
 
+        document.getElementById('recipeModal')?.addEventListener('hidden.bs.modal', () => {
+            if (this.player) {
+                this.player.stopVideo();
+            }
+        });
+
         document.querySelector('.btn-share')?.addEventListener('click', () => {
             this.shareRecipe();
         });
@@ -146,7 +153,7 @@ export class RecipeHandler {
         });
     }
 
-    showRecipe(recipeId) {
+    async showRecipe(recipeId) {
         const recipe = this.recipes[recipeId];
         if (!recipe) {
             console.error("Recipe not found");
@@ -158,9 +165,9 @@ export class RecipeHandler {
             console.error("Modal not found");
             return;
         }
-
+    
         this.currentRecipeId = recipeId;
-
+    
         modal.querySelector('.modal-title').textContent = recipe.name;
         modal.querySelector('.recipe-image').src = recipe.image;
         modal.querySelector('.recipe-description').textContent = recipe.description;
@@ -169,8 +176,13 @@ export class RecipeHandler {
         this.renderInstructions(modal, recipe.recipeInstructions);
         
         this.reviewHandler.displayReviews(recipeId);
+        
         if (recipe.video?.contentUrl) {
-            modal.querySelector('.recipe-video').src = recipe.video.contentUrl;
+            await this.loadYouTubeAPI(); // Wait for API to load
+            this.loadYouTubeVideo(recipe.video.contentUrl);
+        } else {
+            const videoFrame = modal.querySelector('.recipe-video');
+            videoFrame.src = '';
         }
         
         this.mapHandler.initMap(recipe.subjectOf);
@@ -208,6 +220,70 @@ export class RecipeHandler {
                 console.error('Error sharing recipe:', error);
             }
         }
+    }
+
+    loadYouTubeAPI() {
+        return new Promise((resolve) => {
+            if (window.YT) {
+                resolve();
+                return;
+            }
+    
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+            window.onYouTubeIframeAPIReady = () => {
+                resolve();
+            };
+        });
+    }
+
+    loadYouTubeVideo(url) {
+        const videoId = this.extractYouTubeId(url);
+        if (!videoId) return;
+    
+        const videoFrame = document.querySelector('.recipe-video');
+        
+        if (!window.YT) {
+            console.error('YouTube API not loaded yet');
+            return;
+        }
+    
+        if (this.player) {
+            this.player.loadVideoById(videoId);
+        } else {
+            this.player = new YT.Player(videoFrame, {
+                height: '100%',
+                width: '100%',
+                videoId: videoId,
+                playerVars: {
+                    'playsinline': 1,
+                    'rel': 0,
+                    'modestbranding': 1
+                },
+                events: {
+                    'onError': (e) => console.error('YouTube Player Error:', e)
+                }
+            });
+        }
+    }
+    
+    extractYouTubeId(url) {
+        // Handle YouTube short URLs
+        if (url.includes('youtu.be/')) {
+            return url.split('youtu.be/')[1].split(/[?&]/)[0];
+        }
+        
+        // Handle standard URLs
+        const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const match = url.match(regExp);
+        
+        // Additional check for parameters right after ID
+        const id = (match && match[2].length === 11) ? match[2] : null;
+        console.log('YouTube ID:', id);
+        return id ? id.split(/[&?]/)[0] : null; // Truncate at first & or ?
     }
 }
 
