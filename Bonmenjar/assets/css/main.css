@@ -865,6 +865,38 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.hero .recipe-meta {
+  margin: 15px 0;
+}
+
+.hero .recipe-meta i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.hero .recipe-meta .prep-time,
+.hero .recipe-meta .servings {
+  color: var(--default-color);
+  font-size: 1rem;
+}
+
+.hero .recipe-description {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .hero .recipe-meta {
+      margin: 10px 0;
+  }
+  
+  .hero .recipe-description {
+      font-size: 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;

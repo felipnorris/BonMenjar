@@ -17,6 +17,19 @@ export class FeaturedRecipeHandler {
         return featured ? { id: featured[0], ...featured[1] } : null;
     }
 
+    formatTime(isoTime) {
+        if (!isoTime) return 'N/A';
+        
+        const match = isoTime.match(/PT(?:(\d+)D)?(?:(\d+)H)?(?:(\d+)M)?/);
+        if (!match) return 'N/A';
+
+        const days = match[1] ? `${match[1]}d` : '';
+        const hours = match[2] ? `${match[2]}h` : '';
+        const minutes = match[3] ? `${match[3]}min` : '';
+        
+        return `${days} ${hours} ${minutes}`.trim() || 'N/A';
+    }
+
     updateHeroSection(featuredRecipe) {
         if (!featuredRecipe) {
             console.log('No featured recipe for current month');
@@ -27,18 +40,47 @@ export class FeaturedRecipeHandler {
         if (!heroSection) return;
 
         const elements = {
-            title: heroSection.querySelector('h1'),
-            description: heroSection.querySelector('p'),
+            title: heroSection.querySelector('h2'),
+            prepTime: heroSection.querySelector('.prep-time'),
+            servings: heroSection.querySelector('.servings'),
+            description: heroSection.querySelector('.recipe-description'),
             image: heroSection.querySelector('.hero-img img'),
             recipeLink: heroSection.querySelector('.recipe-link')
         };
 
-        if (elements.title) elements.title.textContent = 'Plat del mes';
+        // Update title
+        if (elements.title) {
+            elements.title.textContent = featuredRecipe.name || 'N/A';
+        }
+
+        // Update prep time
+        if (elements.prepTime) {
+            elements.prepTime.textContent = this.formatTime(featuredRecipe.totalTime);
+        }
+
+        // Update servings
+        if (elements.servings) {
+            elements.servings.textContent = 
+                featuredRecipe.recipeYield ? 
+                `${featuredRecipe.recipeYield}` : 
+                'N/A';
+        }
+
+        // Update description
         if (elements.description) {
             elements.description.innerHTML = 
-                `${featuredRecipe.name}<br>Plat típic del mes de ${featuredRecipe.temporal}`;
+                `${featuredRecipe.description || ''}`;
         }
-        if (elements.image) elements.image.src = featuredRecipe.image;
-        if (elements.recipeLink) elements.recipeLink.dataset.recipeId = featuredRecipe.id;
+
+        // Update image
+        if (elements.image) {
+            elements.image.src = featuredRecipe.image;
+            elements.image.alt = featuredRecipe.name;
+        }
+
+        // Update recipe link
+        if (elements.recipeLink) {
+            elements.recipeLink.dataset.recipeId = featuredRecipe.id;
+        }
     }
 }
