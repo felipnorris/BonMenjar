@@ -453,6 +453,7 @@
                 }
             },
             "recipe-6":{
+                "@type": "Recipe",
                 "name": "Coca de Trampó",
                 "image": "assets/img/menu/coca-de-trempo.jpg",
                 "description": "La coca de trampó és un plat tradicional de Mallorca.És una coca lleugera i mediterrània, perfecta per als mesos d'estiu.",
@@ -553,6 +554,7 @@
                 }
             },
             "recipe-7":{
+                "@type": "Recipe",
                 "name": "Arròs Brut",
                 "image": "assets/img/menu/arros-brut.jpg",
                 "description": "L’arròs brut és un plat tradicional de Mallorca, calent, melós i especiat, ideal per als mesos freds.",
@@ -678,6 +680,7 @@
                 }
             },
             "recipe-8":{
+                "@type": "Recipe",
                 "name": "Ensaïmada",
                 "image": "assets/img/menu/ensaimada.jpg",
                 "description": " L’ensaïmada mallorquina és un dolç tradicional, ideal per esmorzars i berenars.",
@@ -782,6 +785,7 @@
                 }
             },
             "recipe-9":{
+                "@type": "Recipe",
                 "name": "Gató",
                 "image": "assets/img/menu/gato-ametlla.jpg",
                 "description": "El gató mallorquí és un pastís esponjós i aromàtic fet amb ametlla, perfecte per acompanyar amb gelat",
