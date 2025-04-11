@@ -941,21 +941,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "abril",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca na Toneta",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 12",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6953,
+                            "longitude": 3.0176
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Plaça",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Esglèsia, 16",
+                            "addressLocality": "Lloseta",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7196586,
+                            "longitude": 2.8648221
+                        }
                     }
-                }
+                ]
             },
             "recipe-11": {
                 "@type": "Recipe",

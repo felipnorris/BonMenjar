@@ -177,15 +177,19 @@ export class RecipeHandler {
         
         this.reviewHandler.displayReviews(recipeId);
         
+        // Gestiona el vídeo
         if (recipe.video?.contentUrl) {
-            await this.loadYouTubeAPI(); // Wait for API to load
+            await this.loadYouTubeAPI();
             this.loadYouTubeVideo(recipe.video.contentUrl);
         } else {
             const videoFrame = modal.querySelector('.recipe-video');
             videoFrame.src = '';
         }
+
+        // Maneja los restaurantes - ahora soporta tanto array como objeto único
+        const restaurants = Array.isArray(recipe.subjectOf) ? recipe.subjectOf : [recipe.subjectOf];
+        this.mapHandler.initMap(restaurants);
         
-        this.mapHandler.initMap(recipe.subjectOf);
         this.speechHandler.initializeSpeechButtons(modal);
         
         this.modal.show();

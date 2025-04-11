@@ -4,8 +4,9 @@ export class MapHandler {
         this.markers = [];
         this.currentRoute = null;
         this.userMarker = null;
-        this.restaurantPosition = null;
+        this.selectedRestaurantPosition = null;
         this.routeInfo = null;
+        this.stopRouteControl = null;
     }
 
     initMap(restaurantData) {
@@ -27,7 +28,16 @@ export class MapHandler {
             }
             this.map.invalidateSize();
             this.clearMarkers();
-            this.addRestaurantMarker(restaurantData);
+            
+            // Convertir a array si es un solo restaurante
+            const restaurants = Array.isArray(restaurantData) ? restaurantData : [restaurantData];
+            restaurants.forEach(restaurant => this.addRestaurantMarker(restaurant));
+            
+            // Ajustar vista para mostrar todos los marcadores
+            if (this.markers.length > 0) {
+                const group = new L.featureGroup(this.markers);
+                this.map.fitBounds(group.getBounds().pad(0.1));
+            }
         });
     }
 
@@ -37,30 +47,6 @@ export class MapHandler {
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(this.map);
-
-            // Crear el control de ruta pero no añadirlo al mapa todavía
-            this.routeControl = L.control({ position: 'topright' });
-            this.routeControl.onAdd = () => {
-                const div = L.DomUtil.create('div', 'route-control');
-                div.innerHTML = `
-                    <div class="leaflet-control leaflet-bar">
-                        <button id="getRouteBtn" class="btn btn-primary mb-2" style="display:none">
-                            <i class="bi bi-map"></i> Obtenir ruta
-                        </button>
-                        <div id="transportOptions" style="display:none" class="bg-white p-2 rounded">
-                            <select id="transportMode" class="form-select mb-2">
-                                <option value="DRIVING">En cotxe</option>
-                                <option value="WALKING">A peu</option>
-                                <option value="BICYCLING">En bicicleta</option>
-                                <option value="TRANSIT">Transport públic</option>
-                            </select>
-                            <button id="calculateRoute" class="btn btn-success btn-sm w-100 mb-1">Calcular ruta</button>
-                            <button id="cancelRoute" class="btn btn-danger btn-sm w-100">Cancel·lar</button>
-                        </div>
-                    </div>
-                `;
-                return div;
-            };
         } catch (error) {
             console.error('Error creating map:', error);
         }
@@ -72,7 +58,6 @@ export class MapHandler {
         try {
             const lat = parseFloat(restaurantData.geo.latitude);
             const lng = parseFloat(restaurantData.geo.longitude);
-            this.restaurantPosition = { lat, lng };
 
             if (isNaN(lat) || isNaN(lng)) {
                 console.error('Invalid coordinates');
@@ -113,52 +98,37 @@ export class MapHandler {
             }).setContent(popupContent);
 
             marker.bindPopup(popup).addTo(this.map);
-            this.map.setView([lat, lng], 15);
-
-            this.setupPopupListeners(marker);
+            this.setupPopupListeners(marker, {lat, lng});
         } catch (error) {
             console.error('Error adding restaurant marker:', error);
         }
     }
 
-    handleRouteRequest() {
-        this.getUserLocation().then(position => {
-            const transportOptions = document.getElementById('transportOptions');
-            const getRouteBtn = document.getElementById('getRouteBtn');
-            
-            transportOptions.style.display = 'block';
-            if (getRouteBtn) getRouteBtn.style.display = 'none';
-            
-            this.setupRouteListeners();
-        }).catch(error => {
-            alert('Error obtenint la ubicació: ' + error.message);
-        });
-    }
+    setupPopupListeners(marker, position) {
+        marker.on('popupopen', () => {
+            const popup = marker.getPopup();
+            const container = popup.getElement();
 
-    setupRouteListeners() {
-        const getRouteBtn = document.getElementById('getRouteBtn');
-        const transportOptions = document.getElementById('transportOptions');
-        const calculateRoute = document.getElementById('calculateRoute');
-        const cancelRoute = document.getElementById('cancelRoute');
+            const showRouteBtn = container.querySelector('.show-route-btn');
+            const transportOptions = container.querySelector('.transport-options');
+            const calculateRouteBtn = container.querySelector('.calculate-route-btn');
 
-        getRouteBtn.addEventListener('click', () => {
-            this.getUserLocation().then(position => {
-                transportOptions.style.display = 'block';
-                getRouteBtn.style.display = 'none';
-            }).catch(error => {
-                alert('Error obtenint la ubicació: ' + error.message);
+            showRouteBtn?.addEventListener('click', () => {
+                this.selectedRestaurantPosition = position;
+                this.getUserLocation().then(() => {
+                    showRouteBtn.style.display = 'none';
+                    transportOptions.style.display = 'block';
+                }).catch(error => {
+                    alert('Error obtenint la ubicació: ' + error.message);
+                });
             });
-        });
 
-        calculateRoute.addEventListener('click', () => {
-            const transportMode = document.getElementById('transportMode').value;
-            this.calculateAndDisplayRoute(transportMode);
-        });
-
-        cancelRoute.addEventListener('click', () => {
-            this.clearRoute();
-            transportOptions.style.display = 'none';
-            getRouteBtn.style.display = 'block';
+            calculateRouteBtn?.addEventListener('click', () => {
+                const transportMode = container.querySelector('select').value;
+                marker.closePopup();
+                this.calculateAndDisplayRoute(transportMode);
+                this.addStopRouteControl();
+            });
         });
     }
 
@@ -193,33 +163,6 @@ export class MapHandler {
         });
     }
 
-    setupPopupListeners(marker) {
-        marker.on('popupopen', () => {
-            const popup = marker.getPopup();
-            const container = popup.getElement();
-
-            const showRouteBtn = container.querySelector('.show-route-btn');
-            const transportOptions = container.querySelector('.transport-options');
-            const calculateRouteBtn = container.querySelector('.calculate-route-btn');
-
-            showRouteBtn?.addEventListener('click', () => {
-                this.getUserLocation().then(() => {
-                    showRouteBtn.style.display = 'none';
-                    transportOptions.style.display = 'block';
-                }).catch(error => {
-                    alert('Error obtenint la ubicació: ' + error.message);
-                });
-            });
-
-            calculateRouteBtn?.addEventListener('click', () => {
-                const transportMode = container.querySelector('select').value;
-                marker.closePopup();
-                this.calculateAndDisplayRoute(transportMode);
-                this.addStopRouteControl();
-            });
-        });
-    }
-
     addStopRouteControl() {
         if (this.stopRouteControl) {
             this.map.removeControl(this.stopRouteControl);
@@ -244,9 +187,10 @@ export class MapHandler {
                     this.routeInfo = null;
                 }
                 
-                // Restablir vista al restaurant
-                if (this.restaurantPosition) {
-                    this.map.setView([this.restaurantPosition.lat, this.restaurantPosition.lng], 15);
+                // Ajustar vista para mostrar todos los marcadores
+                if (this.markers.length > 0) {
+                    const group = new L.featureGroup(this.markers);
+                    this.map.fitBounds(group.getBounds().pad(0.1));
                 }
             });
             
@@ -257,7 +201,7 @@ export class MapHandler {
     }
 
     async calculateAndDisplayRoute(transportMode) {
-        if (!this.userMarker || !this.restaurantPosition) return;
+        if (!this.userMarker || !this.selectedRestaurantPosition) return;
     
         try {
             const directionsService = new google.maps.DirectionsService();
@@ -267,24 +211,21 @@ export class MapHandler {
                     this.userMarker.getLatLng().lng
                 ),
                 destination: new google.maps.LatLng(
-                    this.restaurantPosition.lat,
-                    this.restaurantPosition.lng
+                    this.selectedRestaurantPosition.lat,
+                    this.selectedRestaurantPosition.lng
                 ),
                 travelMode: google.maps.TravelMode[transportMode]
             };
     
             const result = await directionsService.route(request);
             
-            // Convertir la ruta de Google Maps a formato de Leaflet
             const path = result.routes[0].overview_path.map(point => [
                 point.lat(),
                 point.lng()
             ]);
     
-            // Mostrar la ruta en el mapa de Leaflet
             this.displayRoute(path);
     
-            // Añadir información de la ruta
             const route = result.routes[0].legs[0];
             const routeInfo = L.control({ position: 'bottomleft' });
             routeInfo.onAdd = () => {
@@ -298,7 +239,6 @@ export class MapHandler {
                 return div;
             };
     
-            // Eliminar información de ruta anterior si existe
             if (this.routeInfo) {
                 this.map.removeControl(this.routeInfo);
             }
@@ -321,7 +261,6 @@ export class MapHandler {
             lineJoin: 'round'
         }).addTo(this.map);
     
-        // Ajustar el mapa para mostrar toda la ruta
         this.map.fitBounds(this.currentRoute.getBounds(), {
             padding: [50, 50]
         });
