@@ -2017,3 +2017,45 @@ section,
 .recipe-rating strong {
   color: #333;
 }
+
+/* Estilos para el toggle del formato de receta */
+.recipe-format-toggle {
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.recipe-format-toggle i {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.collapse.show + .recipe-format-toggle i {
+  transform: rotate(180deg);
+}
+
+.recipe-format pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.recipe-format h5 {
+  color: var(--bs-secondary-color);
+}
+
+.recipe-format {
+  transition: all 0.3s ease;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
