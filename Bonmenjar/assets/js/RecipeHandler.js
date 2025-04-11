@@ -61,7 +61,13 @@ export class RecipeHandler {
             if (categoryContainer) {
                 const totalTime = this.formatTime(recipe.totalTime);
                 const recipeYield = recipe.recipeYield || 'Desconegut';
-
+                
+                // Calcular valoración media
+                const reviews = this.reviewHandler.reviews[id] || [];
+                const averageRating = reviews.length > 0 
+                    ? (reviews.reduce((sum, review) => sum + review.reviewRating.ratingValue, 0) / reviews.length).toFixed(1)
+                    : '"N/A"';
+                
                 categoryContainer.innerHTML += `
                     <div class="col-lg-4 menu-item">
                         <a href="#" class="recipe-link" data-recipe-id="${id}">
@@ -71,6 +77,9 @@ export class RecipeHandler {
                         <p class="recipe-meta">
                             <strong>Temps:</strong> ${totalTime} | 
                             <strong>Per a:</strong> ${recipeYield}
+                        </p>
+                        <p class="recipe-rating">
+                            <strong>Valoració:</strong> ${averageRating}/5 ⭐
                         </p>
                         <p class="ingredients d-none">${recipe.recipeIngredient.join(', ')}</p>
                     </div>

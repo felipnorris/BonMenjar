@@ -1942,17 +1942,55 @@ section,
   margin-bottom: 5px;
 }
 
+/* Estilos para el mapa y controles de ruta */
 .restaurant-popup {
-  text-align: center;
   min-width: 200px;
 }
 
 .restaurant-popup h5 {
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .restaurant-popup p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.route-controls {
+  margin-top: 1rem;
+}
+
+.transport-options select {
+  font-size: 0.875rem;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 12px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.stop-route-control {
+  background: white;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.route-info {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.route-info strong {
+  color: #0d6efd;
 }
 
 .show-route-btn {
@@ -1968,4 +2006,14 @@ section,
 
 #transportOptions {
   min-width: 200px;
+}
+
+.recipe-rating {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.recipe-rating strong {
+  color: #333;
 }
