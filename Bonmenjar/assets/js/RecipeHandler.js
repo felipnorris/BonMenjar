@@ -2,6 +2,7 @@ import { MapHandler } from './modules/MapHandler.js';
 import { ReviewHandler } from './modules/ReviewHandler.js';
 import { FeaturedRecipeHandler } from './modules/FeaturedRecipeHandler.js';
 import { SpeechHandler } from './modules/SpeechHandler.js';
+import { YouTubeHandler } from './modules/YouTubeHandler.js';
 
 export class RecipeHandler {
     constructor() {
@@ -13,6 +14,7 @@ export class RecipeHandler {
         this.currentRecipeId = null;
         this.recipes = {};
         this.searchDebounceTimer = null;
+        this.youtubeHandler = new YouTubeHandler();
         this.player = null;
 
         this.init();
@@ -119,9 +121,7 @@ export class RecipeHandler {
         });
 
         document.getElementById('recipeModal')?.addEventListener('hidden.bs.modal', () => {
-            if (this.player) {
-                this.player.stopVideo();
-            }
+            this.youtubeHandler.stopVideo();
         });
 
         document.querySelector('.btn-share')?.addEventListener('click', () => {
@@ -177,10 +177,10 @@ export class RecipeHandler {
         
         this.reviewHandler.displayReviews(recipeId);
         
-        // Gestiona el vídeo
         if (recipe.video?.contentUrl) {
-            await this.loadYouTubeAPI();
-            this.loadYouTubeVideo(recipe.video.contentUrl);
+            await this.youtubeHandler.loadAPI();
+            const videoFrame = modal.querySelector('.recipe-video');
+            this.youtubeHandler.loadVideo(recipe.video.contentUrl, videoFrame);
         } else {
             const videoFrame = modal.querySelector('.recipe-video');
             videoFrame.src = '';
