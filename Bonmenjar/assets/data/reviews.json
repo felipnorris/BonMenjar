@@ -1,5 +1,5 @@
 {
-    "@context": "http://schema.org",
+    "@context": "http:\/\/schema.org",
     "@type": "Review",
     "reviews": [
         {
@@ -10,7 +10,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "Deliciós! M'ha encantat aquest plat."
+            "reviewBody": "Delici\u00f3s! M'ha encantat aquest plat."
         },
         {
             "id": "review-2",
@@ -20,7 +20,7 @@
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "Molt bo, però una mica salat."
+            "reviewBody": "Molt bo, per\u00f2 una mica salat."
         },
         {
             "id": "review-3",
@@ -30,7 +30,7 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "No està malament, però no és el meu preferit."
+            "reviewBody": "No est\u00e0 malament, per\u00f2 no \u00e9s el meu preferit."
         },
         {
             "id": "review-4",
@@ -40,18 +40,17 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            
-            "reviewBody": "Senzill, gustos i elegant. Les sopes mallorquines són el plat perfecte per a l'hivern."
+            "reviewBody": "Senzill, gustos i elegant. Les sopes mallorquines s\u00f3n el plat perfecte per a l'hivern."
         },
         {
             "id": "review-5",
-            "author": "Antònia",
+            "author": "Ant\u00f2nia",
             "itemReviewed": "recipe-4",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "El Tumbet és espectacular! Les verdures estaven en el seu punt perfecte. Recomano fer-ho amb pa fresc."
+            "reviewBody": "El Tumbet \u00e9s espectacular! Les verdures estaven en el seu punt perfecte. Recomano fer-ho amb pa fresc."
         },
         {
             "id": "review-6",
@@ -61,7 +60,7 @@
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "El Cardenal de Lloseta és un postre increïble. Dolç però no empalagós. Perfecte per acabar un àpat."
+            "reviewBody": "El Cardenal de Lloseta \u00e9s un postre incre\u00efble. Dol\u00e7 per\u00f2 no empalag\u00f3s. Perfecte per acabar un \u00e0pat."
         },
         {
             "id": "review-7",
@@ -71,17 +70,17 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "El millor Frit Mallorquí que he tastat mai. La combinació de vísceres i verdures és perfecta."
+            "reviewBody": "El millor Frit Mallorqu\u00ed que he tastat mai. La combinaci\u00f3 de v\u00edsceres i verdures \u00e9s perfecta."
         },
         {
             "id": "review-8",
-            "author": "Damià",
+            "author": "Dami\u00e0",
             "itemReviewed": "recipe-3",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "Les sopes mallorquines em van recordar a la meva infantesa. Un plat reconfortant i deliciós."
+            "reviewBody": "Les sopes mallorquines em van recordar a la meva infantesa. Un plat reconfortant i delici\u00f3s."
         },
         {
             "id": "review-9",
@@ -91,7 +90,7 @@
                 "@type": "Rating",
                 "ratingValue": 2
             },
-            "reviewBody": "Els caragols no eren del meu gust. Potser necessiten més temps de cocció."
+            "reviewBody": "Els caragols no eren del meu gust. Potser necessiten m\u00e9s temps de cocci\u00f3."
         },
         {
             "id": "review-10",
@@ -101,7 +100,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "El Tumbet és la meva debilitat. Cada vegada que visito Mallorca el demano a tots els restaurants!"
+            "reviewBody": "El Tumbet \u00e9s la meva debilitat. Cada vegada que visito Mallorca el demano a tots els restaurants!"
         },
         {
             "id": "review-11",
@@ -111,17 +110,17 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "El Cardenal és simplement perfecte. La merenga està en el punt exacte de sucre i lleugeresa."
+            "reviewBody": "El Cardenal \u00e9s simplement perfecte. La merenga est\u00e0 en el punt exacte de sucre i lleugeresa."
         },
         {
             "id": "review-12",
-            "author": "Hèctor",
+            "author": "H\u00e8ctor",
             "itemReviewed": "recipe-1",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 4
             },
-            "reviewBody": "Boníssim Frit Mallorquí, tot i que m'agradaria veure una versió una mica més lleugera."
+            "reviewBody": "Bon\u00edssim Frit Mallorqu\u00ed, tot i que m'agradaria veure una versi\u00f3 una mica m\u00e9s lleugera."
         },
         {
             "id": "review-13",
@@ -141,7 +140,7 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "No està malament, però molt bàsic"
+            "reviewBody": "No est\u00e0 malament, per\u00f2 molt b\u00e0sic"
         },
         {
             "id": "review-15",
@@ -151,7 +150,7 @@
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "Espectacular. Molt bò i variat"
+            "reviewBody": "Espectacular. Molt b\u00f2 i variat"
         },
         {
             "id": "review-16",
@@ -171,7 +170,7 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "Massa dolç i empalagos"
+            "reviewBody": "Massa dol\u00e7 i empalagos"
         },
         {
             "id": "review-18",
@@ -195,23 +194,23 @@
         },
         {
             "id": "review-20",
-            "author": "Sebestià",
+            "author": "Sebesti\u00e0",
             "itemReviewed": "recipe-9",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 5
             },
-            "reviewBody": "És, ideal per l'estiu, m'encanta"
+            "reviewBody": "\u00c9s, ideal per l'estiu, m'encanta"
         },
         {
             "id": "review-21",
-            "author": "Sebestià",
+            "author": "Sebesti\u00e0",
             "itemReviewed": "recipe-8",
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "Simple i molt bàsica, m'agrada més l'ensaimada farcida."
+            "reviewBody": "Simple i molt b\u00e0sica, m'agrada m\u00e9s l'ensaimada farcida."
         },
         {
             "id": "review-22",
@@ -231,7 +230,17 @@
                 "@type": "Rating",
                 "ratingValue": 3
             },
-            "reviewBody": "Per la meva experiència, el temps de repòs hauria de ser, almenys, d'uns 30 dies."
+            "reviewBody": "Per la meva experi\u00e8ncia, el temps de rep\u00f2s hauria de ser, almenys, d'uns 30 dies."
+        },
+        {
+            "id": "review-24",
+            "author": "Felip",
+            "itemReviewed": "recipe-10",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "reviewBody": "El millor frit de pasqua"
         }
     ]
 }
