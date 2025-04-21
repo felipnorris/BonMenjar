@@ -5,7 +5,7 @@
             "recipe-1": {
                 "@type": "Recipe",
                 "name": "Frit Mallorquí",
-                "image": "assets/img/menu/frit-mallorqui.jpg",
+                "image": "assets/img/menu/frit-mallorqui.webp",
                 "description": "Quan proves el frit mallorquí, el plat tradicional balear per excel·lència, entens el perquè de la seva popularitat i els seus segles d’història. La recepta té origen en la cultura sefardí, de les costums culinàries dels que viuen o descendeixen dels jueus procedents d’Espanya, amb influencies clares de la cuina àrab i turca. Una barreja de sabors que combina el xai, la patata i les verdures fregides, acabades amb un toc de laurel. Assaboreix la màxima expresso i cultura mallorquina amb aquesta recepta, que conta amb totes les avantatges de la saludable i completa mediterrània.",
                 "author": {
                     "@type": "Organization",
@@ -83,7 +83,7 @@
             "recipe-2": {
                 "@type": "Recipe",
                 "name": "Caragols",
-                "image": "assets/img/menu/caragols.jpg",
+                "image": "assets/img/menu/caragols.webp",
                 "description": "Els caragols són un dels plats més tradicionals de la gastronomia mallorquina, especialment populars durant la primavera.",
                 "author": {
                     "@type": "Organization",
@@ -180,7 +180,7 @@
             "recipe-3":{
                 "@type": "Recipe",
                 "name": "Sopes Mallorquines",
-                "image": "assets/img/menu/sopes-mallorquines.jpg",
+                "image": "assets/img/menu/sopes-mallorquines.webp",
                 "description": "Les sopes mallorquines son uns dels plats més emblemàtics de la gastronomia balear, és tipic de l'hivern i destaca per la seva senzillesa.",
                 "author": {
                     "@type": "Organization",
@@ -287,7 +287,7 @@
             "recipe-4": {
                 "@type": "Recipe",
                 "name": "Tumbet",
-                "image": "assets/img/menu/tumbet.jpg",
+                "image": "assets/img/menu/tumbet.webp",
                 "description": "El Tumbet és un plat típic de Mallorca que consisteix en una capa de patates, albergínies i pebrots fregits, coberts amb una salsa de tomàquet. És un plat molt saborós i saludable.",
                 "author": {
                     "@type": "Organization",
@@ -367,7 +367,7 @@
             "recipe-5": {
                 "@type": "Recipe",
                 "name": "Cardenal de Lloseta",
-                "image": "assets/img/menu/cardenal-lloseta.jpg",
+                "image": "assets/img/menu/cardenal-lloseta.webp",
                 "description": "El Cardenal de Lloseta és un postre típic de Mallorca, fet amb merenga, nata i pa de pessic. És un postre molt dolç i tradicional.",
                 "author": {
                     "@type": "Organization",
@@ -455,7 +455,7 @@
             "recipe-6":{
                 "@type": "Recipe",
                 "name": "Coca de Trampó",
-                "image": "assets/img/menu/coca-de-trempo.jpg",
+                "image": "assets/img/menu/coca-de-trempo.webp",
                 "description": "La coca de trampó és un plat tradicional de Mallorca.És una coca lleugera i mediterrània, perfecta per als mesos d'estiu.",
                 "author": {
                     "@type": "Organization",
@@ -556,7 +556,7 @@
             "recipe-7":{
                 "@type": "Recipe",
                 "name": "Arròs Brut",
-                "image": "assets/img/menu/arros-brut.jpg",
+                "image": "assets/img/menu/arros-brut.webp",
                 "description": "L’arròs brut és un plat tradicional de Mallorca, calent, melós i especiat, ideal per als mesos freds.",
                 "author": {
                     "@type": "Organization",
@@ -682,7 +682,7 @@
             "recipe-8":{
                 "@type": "Recipe",
                 "name": "Ensaïmada",
-                "image": "assets/img/menu/ensaimada.jpg",
+                "image": "assets/img/menu/ensaimada.webp",
                 "description": " L’ensaïmada mallorquina és un dolç tradicional, ideal per esmorzars i berenars.",
                 "author": {
                     "@type": "Organization",
@@ -787,7 +787,7 @@
             "recipe-9":{
                 "@type": "Recipe",
                 "name": "Gató",
-                "image": "assets/img/menu/gato-ametlla.jpg",
+                "image": "assets/img/menu/gato-ametlla.webp",
                 "description": "El gató mallorquí és un pastís esponjós i aromàtic fet amb ametlla, perfecte per acompanyar amb gelat",
                 "author": {
                     "@type": "Organization",
@@ -880,7 +880,7 @@
             "recipe-10": {
                 "@type": "Recipe",
                 "name": "Frit de Pasqua",
-                "image": "assets/img/menu/frit-pasqua.jpg",
+                "image": "assets/img/menu/frit-pasqua.webp",
                 "description": "El Frit de Pasqua és un plat tradicional de la gastronomia balear que es consumeix especialment durant Setmana Santa. Aquesta recepta combina carn de be amb verdures fresques, donant lloc a un plat saborós i típicament mediterrani.",
                 "author": {
                     "@type": "Organization",

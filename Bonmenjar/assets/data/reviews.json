@@ -241,6 +241,16 @@
                 "ratingValue": 5
             },
             "reviewBody": "El millor frit de pasqua"
+        },
+        {
+            "id": "review-25",
+            "author": "Felip",
+            "itemReviewed": "recipe-1",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4
+            },
+            "reviewBody": "Molt bo, per\u00f2 no es millor"
         }
     ]
 }
