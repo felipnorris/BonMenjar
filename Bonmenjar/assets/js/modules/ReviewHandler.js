@@ -39,7 +39,7 @@ export class ReviewHandler {
             };
 
             try {
-                const response = await fetch('forms/submitReview.php', {
+                const response = await fetch('php/submitReview.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
