@@ -58,6 +58,7 @@
           <li><a href="#hero" class="active">Inici<br></a></li>
           <li><a href="#receptes">Receptes</a></li>
           <li><a href="#testimonials">Destacats</a></li>
+          <li><a href="#restaurants">Restaurants</a></li>
           <li><a href="#qui-som">Qui som?</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -207,6 +208,29 @@
     </section>
     <!-- /Testimonials Section -->
 
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="restaurants section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <p><span class="description-title">RESTAURANTS AMB ESTRELLA MICHELIN</span></p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="restaurants-wrapper">
+          <div class="row restaurants-row flex-nowrap pb-3" id="restaurants-container">
+            <!-- Els restaurants es carregaran aquí dinàmicament -->
+          </div>
+        </div>
+
+        <div class="pagination-container mt-4 d-flex justify-content-center">
+          <nav aria-label="Paginació de restaurants">
+            <ul class="pagination pagination-lg" id="restaurants-pagination">
+              <!-- La paginació es generarà aquí dinàmicament -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- /Restaurants Section -->
 
     <!-- Qui som Section -->
     <section id="qui-som" class="chefs section">
@@ -371,7 +395,7 @@ Ubicació (opcional):
   <script defer src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Main JS Files -->
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
   <script type="module" src="assets/js/RecipeHandler.js"></script>
   <script type="module" src="assets/js/BestRecipes.js"></script>
   <script src="assets/js/recipeFormat.js"></script>

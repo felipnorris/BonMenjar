@@ -1,0 +1,1083 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "numberOfItems": "7",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Restaurant",
+                "name": "Zaranda",
+                "identifier": "zar",
+                "image": "https://zaranda.es/wp-content/uploads/2024/04/restaurante-zaranda-cocina-interior-mallorca.jpg",
+                "logo": "https://zaranda.es/wp-content/uploads/2018/01/logo-zaranda-e1516703063494.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Mallorca",
+                    "addressRegion": "Palma de Mallorca",
+                    "postalCode": "07001",
+                    "streetAddress": "Carrer Bala Roja 1"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "39.566171",
+                    "longitude": "2.655409"
+                },
+                "hasMap": "https://maps.app.goo.gl/D3L62r6nZhpo1SDx9",
+                "acceptsReservations": "https://zaranda.es/reservar/",
+                "servesCuisine": "Creativa",
+                "email": "zaranda@zaranda.es",
+                "telephone": "+34680602580",
+                "description": "En el 2005 Zaranda abrió sus puertas en el madrileño barrio de San Bernardino. Solo un año después consiguió una estrella Michelin. Tras 5 años en Madrid el restaurante se movió, junto a todo su equipo, a Mallorca, donde inmediatamente volvió a recuperar el preciado galardón de la guía francesa. 10 años después de su apertura, Zaranda se ha consolidado en la isla recibiendo su segunda estrella Michelin en la guía del 2016.",
+                "openingHours": "Tu-Su 19:00-21:30",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:00:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-01-01",
+                        "validThrough": "2025-06-30"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ],
+                        "opens": "19:00:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-07-01",
+                        "validThrough": "2025-09-30"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:00:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-10-01",
+                        "validThrough": "2026-06-30"
+                    }
+                ],
+                "priceRange": "€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "TheFork PAY",
+                        "logo": "https://static.gotostage.com/filepicker/logos/FXlbDJcbTtGoXUoTaUxM_Screenshot%202023-03-10%20at%2014.27.34.png"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Fernando Perez Arellano",
+                    "givenName": "Fernando",
+                    "familyName": "Perez Arellano",
+                    "award": "Dos estrellas Michelin y dos soles Repsol",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "Tras esa trayectoria vital y profesional, en 2005 vuelve a Madrid, donde abre un modesto y diminuto restaurante en la calle San Bernardino, a espaldas de la Plaza de España. Es el primer Zaranda, donde pronto capta la atención de críticos y gourmets. La primera estrella Michelin no se hace esperar y en 2006, solo un año después, Fernando asciende al olimpo gastronómico. El éxito le aconseja entonces instalarse en un establecimiento de mayor dimensión y Zaranda se desplaza a la calle Eduardo Dato, en la zona más refinada del distrito de Chamberí.\nDos años después, se traslada a Baleares donde, en 2015, alcanza la segunda estrella Michelin. Talento y perseverancia, audacia, técnica e intuición le han servido para revalidar sus dos estrellas y seguir brillando como el único cocinero de Baleares con dos estrellas Michelin y dos soles Repsol. A las dobles distinciones que Zaranda luce con orgullo, Fernando acumula numerosos galardones profesionales y el beneplácito permanente de la crítica culinaria más sensata, lo que acredita el talento y la trayectoria de este chef vanguardista y de exquisita formación cosmopolita.\nEn 2016, inauguraba Baiben en Puerto Portals. Baiben ensalza la cocina elegante y equilibrada pero con carácter ecléctico. En su carta se encuentran algunos de los platos favoritos de Fernando, esencia y ambiente mediterráneo con guiños internacionales, latinos y asiáticos, que dan vida a lo clásico. Carnes maduradas, pescados a la brasa, arroces y pastas caseras conforman una cocina multirracial, atrevida e intrépida, que aporta esa experiencia sensorial que conlleva la cocina de Fernando Arellano.",
+                    "image": "https://fernandoarellano.com/wp-content/uploads/2021/03/img-1400x700-1.jpg",
+                    "url": "https://fernandoarellano.com/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "3",
+                    "reviewCount": "2",
+                    "ratingValue": "4.5",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Pedro",
+                        "datePublished": "2019-03-25",
+                        "reviewBody": "En un bonito castillo tras un frondoso parque está el restaurante Zaranda. Con 2 estrellas Michelin promete al comensal gran calidad con productos de la tierra. Tomamos el menú experiencias. La comida en general nos gustó bastante, especialmente el postre de almendras, pero el vino recomendado fue decepcionante.\nQue en un menú de ese nivel te cobren el agua no es usual ni deseable. Deberían encender más luces cuando oscurece.\nResumiendo, la calidad es excelente pero el precio es un tanto exagerado y tienen algún detalle que mejorar",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "4",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "MariAm",
+                        "datePublished": "2024-12-01",
+                        "reviewBody": "Experiencia única, de principio a fin. Comes en varias salas y ambientes diferentes, pudiendo ver a los chefs cocinar delante tuyo y comer sobre una antigua curtiduría!! Recomiendo vivir la experiencia!! Menú muy creativo y platos muy sabrosos! Nos encantó!",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Zaranda",
+                    "url": "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fzarandarest%2Fvideos%2F390661761313576%2F&show_text=false&width=560&t=0"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "omakase",
+                "name": "Omakase by Walt",
+                "identifier": "oma",
+                "image": "https://image.yachtcharterfleet.com/w1920/h619/qh/ca/ka25aeb2e/directory/profile/photo/2410030.jpg",
+                "logo": "https://www.sushibywalt.com/images/logo.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Ibiza",
+                    "addressRegion": "Ibiza",
+                    "postalCode": "07800",
+                    "streetAddress": "Canonge Joan Planells 8"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "38.90773",
+                    "longitude": "1.43070"
+                },
+                "hasMap": "https://maps.app.goo.gl/bY6nzELDhZH2dTDB8",
+                "acceptsReservations": "https://www.sushibywalt.com/reserva.php",
+                "servesCuisine": "Japonesa",
+                "email": "info@sushibywalt.com",
+                "telephone": "+34692285294",
+                "description": "Omakase by Walt es un sushi bar japonés escondido en el centro de la ciudad de Ibiza. Detrás de una barra de madera de ocho asientos, Walter ofrece un menú degustación al estilo Edomae, preparado en frente al cliente, en un ambiente muy íntimo. Cada plato es el resultado de una atenta selección de los ingredientes: productos de temporada combinados respetando las técnicas tradicionales y enriquecidos por un toque personal. Una selección especial de sake japonés acompañará la comida, creando una combinación perfecta con cada plato. Una experiencia autentica y exclusiva que trasladará sus comensales directamente a Japón.",
+                "openingHours": "Mo-Fr 20:00-00:00",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "20:00:00",
+                    "closes": "00:00:00",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2026-12-31"
+                },
+                "priceRange": "€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Maestro",
+                        "logo": "https://cdn.worldvectorlogo.com/logos/maestro-2.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Walter Sidoravicius",
+                    "givenName": "Walter",
+                    "familyName": "Sidoravicius",
+                    "award": "Una estrella Michelin",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "El interés por la cocina siempre ha estado presente en su vida. Nacido en Venezuela, con raíces europeas, desde su infancia Walter ha experimentado continuamente con variedad de productos y sabores. Su pasión por el sushi lo llevó a vivir en Japón por más de un año. Allí descubrió su cultura y la riqueza de su gastronomía. Trabajó en Nobu Tokio, donde día tras día se formó siguiendo la más tradicional filosofía japonesa: una combinación de pasión, dedicación y atención al mínimo detalle. Perfeccionó sus conocimientos y su técnica y al final de su estadía participó en la World Sushi Cup 2014, convirtiéndose en finalista.",
+                    "image": "https://www.sushibywalt.com/images/1.jpg",
+                    "url": "https://www.instagram.com/waltersushichef/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "4",
+                    "reviewCount": "3",
+                    "ratingValue": "4.0",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Matias",
+                        "datePublished": "2024-07-20",
+                        "reviewBody": "Calidad precio cuestionable.\nLos precios desorbitados.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "2",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Antonio",
+                        "datePublished": "2024-08-17",
+                        "reviewBody": "Espectacular. Sencillamente espectacular. Materia prima de primera calidad. Para ser Ibiza, buena relación calidad-precio",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Matias",
+                        "datePublished": "2024-10-25",
+                        "reviewBody": "Gran restaurante para degustar sabores japoneses.sin duda volveré",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Omakase by Walt",
+                    "url": "https://www.tiktok.com/@theitalianfoodsnobs/video/7414875284912016672?is_from_webapp=1&sender_device=pc"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "unic",
+                "name": "Unic",
+                "identifier": "uni",
+                "image": "https://www.unicrestaurantibiza.com/themes/media/se494-7193-el-espacio.jpg",
+                "logo": "https://www.unicrestaurantibiza.com/themes/default/images/theme/logo-unic-estrella-white.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Ibiza",
+                    "addressRegion": "San José",
+                    "postalCode": "07817",
+                    "streetAddress": "Carrer ses Begònies 18"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "38.89052",
+                    "longitude": "1.40788"
+                },
+                "hasMap": "https://maps.app.goo.gl/PrgwDdt7HqB8qo7N8",
+                "acceptsReservations": "https://www.thefork.es/restaurante/unic-hotel-migjorn-ibiza-suites-spa-r302751",
+                "servesCuisine": "Innovadora",
+                "email": "unicrestaurant@gmail.com",
+                "telephone": "+34971393573",
+                "description": "UNIC Restaurant representa una experiencia culinaria, donde los comensales podrán descubrir parte de la esencia de la isla a través de una cocina donde se mezclan tradición y vanguardia. Ubicado en Migjorn Ibiza Suites & Spa, en el corazón de playa D´en Bossa.",
+                "openingHours": "We-Su 19:30-23:00",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "19:30:00",
+                    "closes": "23:00:00",
+                    "validFrom": "2025-01-01",
+                    "validThrough": "2026-12-31"
+                },
+                "priceRange": "€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Maestro",
+                        "logo": "https://cdn.worldvectorlogo.com/logos/maestro-2.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "David Grussaute",
+                    "givenName": "David",
+                    "familyName": "Grussaute",
+                    "award": "Una estrella Michelin",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "David Grussaute (Bordeaux), cocinero de origen francés que lleva en la sangre esta profesión, cuenta con todo un bagaje profesional que lo avala. Desde Francia, formando parte del equipo de la prestigiosa cadena Relais&Chateaus (con estrella Michelín), pasando por las Islas Comores (en África), Escocia y finalmente acabando en Ibiza, con una dilatada experiencia como Chef en establecimientos gastronómicos de primer nivel. De todos estos lugares, y experiencias profesionales, se ha llevado su esencia y la ha plasmado en un consolidado proyecto, UNIC RESTAURANT.",
+                    "image": "https://www.unicrestaurantibiza.com/themes/media/se425-7699-el-chef.jpg",
+                    "url": "https://www.instagram.com/grussaute/?hl=es"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "4",
+                    "reviewCount": "3",
+                    "ratingValue": "4.3",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Rafael",
+                        "datePublished": "2022-08-29",
+                        "reviewBody": "Un menú degustación a la altura de cualquier gran chef, que da un repaso a los productos autóctonos. Con una relación calidad/precio excelente.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Risitas60",
+                        "datePublished": "2024-05-16",
+                        "reviewBody": "Uno de los mejores menús degustación que he probado.\nHe disfrutado muchísimo con platos que tardare en olvidar.\nEl servicio amabilísimo.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Tolo",
+                        "datePublished": "2025-02-16",
+                        "reviewBody": "Teníamos buen sabor de boca, pero nos ha cambiado, excelente cocinero pero el servicio está fallando, al final éramos los últimos y nos invitaron a irnos. No se sí habrá otra oportunidad. Por estos detalles se pierden los clientes.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "3",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Unic",
+                    "url": "https://images.neobookings.com/cms/unicrestaurantibiza.com/section/unic-restaurant-ibiza/videos/unic-restaurant-ibiza-m1lkjv7erz.mp4"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "esTragon",
+                "name": "Es Tragón",
+                "identifier": "est",
+                "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/bd/17/85/terraza-ezterior.jpg?w=1000&h=-1&s=1",
+                "logo": "https://static.wixstatic.com/media/3eef89_b887c610f41644bcbd925078cdd171e3~mv2.png/v1/fill/w_407,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20es%20tragon_PNG.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Ibiza",
+                    "addressRegion": "San Antonio Abad",
+                    "postalCode": "07820",
+                    "streetAddress": "Crta. Cap Negret S/N"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "38.99568",
+                    "longitude": "1.29157"
+                },
+                "hasMap": "https://maps.app.goo.gl/jKrWtE2smBKf3zLk7",
+                "acceptsReservations": "https://www.estragonibiza.com/reservas",
+                "servesCuisine": "Creativa",
+                "email": "estragon@hotmail.com",
+                "telephone": "+34971346454",
+                "description": "Es Tragón ofrece una propuesta fresca, sobria, centrada en la recuperación de la sostenibilidad y la autosuficiencia, buscando la excelencia y llegando al alma de los comensales con nuestro Menú Degustación.",
+                "openingHours": "We-Sa 19:30-22:00",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "19:30:00",
+                    "closes": "22:00:00",
+                    "validFrom": "2025-05-02",
+                    "validThrough": "2025-09-27"
+                },
+                "priceRange": "€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Maestro",
+                        "logo": "https://cdn.worldvectorlogo.com/logos/maestro-2.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "TheFork PAY",
+                        "logo": "https://static.gotostage.com/filepicker/logos/FXlbDJcbTtGoXUoTaUxM_Screenshot%202023-03-10%20at%2014.27.34.png"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Álvaro Sanz Clavijo",
+                    "givenName": "Álvaro",
+                    "familyName": "Sanz Clavijo",
+                    "award": "Una estrella Michelin",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "Álvaro Sanz Clavijo, nacido en Madrid (1983), tiene la suerte de formarse en la escuela de cocina de “El Cenador de Salvador” *MICHELÍN y adquirir desde su pronta juventud el trabajo por la excelencia y el amor por un oficio que despierta su pasión volcando en él todas sus fuerzas.",
+                    "image": "https://static.wixstatic.com/media/3eef89_56970af595f54e50bd1ec10227fe3b8d~mv2.jpg/v1/fill/w_629,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3eef89_56970af595f54e50bd1ec10227fe3b8d~mv2.jpg",
+                    "url": "https://www.instagram.com/sanz.alvaro/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "4",
+                    "reviewCount": "3",
+                    "ratingValue": "3.7",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Emilio",
+                        "datePublished": "2019-08-07",
+                        "reviewBody": "Ubicación perfecta: terraza entre pinos con un ambiente inmejorable. Ideal para cenas. Servicio también óptimo, muy atento y servicial. Tomamos el menú mediano (90 euros) y la elaboración muy cuidada y la presentación excepcional. Sin embargo creo que solo es para paladares muy atrevidos, y no parece ser mi caso. Fusión forzada bajo mi perspectiva.  Algunos platos son exquisitos (arroz con morena o las fabes con ostras) pero en otros (la mayoría desde mi punto de vista) simplemente era una mezcla que me resultó desagradable. Yo no volvería pero si tu paladar es atrevido, este es tu lugar.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "2",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Nadia",
+                        "datePublished": "2020-06-20",
+                        "reviewBody": "El lugar es acogedor y tiene un estilo muy típico de la isla. El servicio es excelente, los camareros muy atentos. En cuanto a los platos, la presentación de cada uno es genial con detalles únicos y en sintonía con los alimentos. Los sabores sorprenden al combinarse. Tal vez el único contra es que al ser tantos platos se pierde o se mezclan tanto los sabores que al final uno empieza a confundirse.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "4",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "MenFeliz",
+                        "datePublished": "2024-03-19",
+                        "reviewBody": "Una cocina delicada, centrada en la sostenibilidad y autosuficiencia. Volcados en el mediterráneo, hacen sus propios panes, quesos, salazones...\nMucho sabor en cada bocado y un excelente servicio.\nMerece la pena disfrutar de esta experiencia, espero volver en septiembre!!",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Es Tragón",
+                    "url": "https://video.wixstatic.com/video/3eef89_a0d8f2f6f9c24f88984e63b454ab080f/360p/mp4/file.mp4"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "voro",
+                "name": "Voro",
+                "identifier": "vor",
+                "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/68/54/voro-by-alvaro-salazar.jpg?w=1000&h=-1&s=1",
+                "logo": "https://vororestaurant.com/fileadmin/user_upload/Logo-voro.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Mallorca",
+                    "addressRegion": "Capdepera",
+                    "postalCode": "07589",
+                    "streetAddress": "Urb. Atalaya de Canyamel, Vial A2, 12"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "39.66876",
+                    "longitude": "3.43917"
+                },
+                "hasMap": "https://maps.app.goo.gl/TRnK52dVcAdbpdKG8",
+                "acceptsReservations": "https://vororestaurant.com/reserva/",
+                "servesCuisine": "Moderna",
+                "email": "voro@grupocapvermell.com",
+                "telephone": "+34871811350",
+                "description": "Nuestra cocina se desenvuelve en total libertad, sin imposiciones, y la definimos como una manifestación culinaria sin limitaciones. A pesar de ello, mantenemos un fuerte compromiso con nuestro entorno y nuestras raíces. Nos enorgullece explorar la riqueza gastronómica de nuestra cultura sin sentirnos atados, siempre rindiendo homenaje a la vasta tradición culinaria de nuestro país.",
+                "openingHours": "Tu-Sa 19:00-20:30",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "19:00:00",
+                    "closes": "20:30:00",
+                    "validFrom": "2025-04-03",
+                    "validThrough": "2025-10-31"
+                },
+                "priceRange": "€€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Maestro",
+                        "logo": "https://cdn.worldvectorlogo.com/logos/maestro-2.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    }
+                ],
+                "award": "Dos estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Álvaro Salazar",
+                    "givenName": "Álvaro",
+                    "familyName": "Salazar",
+                    "award": "Dos estrellas Michelin y dos soles Repsol",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "Tras finalizar sus estudios en gastronomía, Álvaro Salazar hizo sus primeras prácticas con solo 17 años en Tragabuches (1* Michelin). En 2006 viajó a Ezcaray para seguir formándose en Echaurren (2* Michelin). Pasó otros 5 meses como aprendiz entre los restaurantes “El Portal” y “Echaurren” y, tras un año en Córdoba capitaneando el primer 5* en la ciudad, inició un viaje por la geografía nacional que le llevaría a conocer a fondo la cocina, pastelería y panadería de nuestro país. Algo que, sin duda, se evidencia en la propuesta que brinda hoy a sus comensales.",
+                    "image": "https://instagram.fbcn13-1.fna.fbcdn.net/v/t51.2885-15/469283185_18474164428034563_7415944985159342043_n.jpg?stp=dst-jpg_e35_s1080x1080_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDk2NC5zZHIuZjc1NzYxLmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fbcn13-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QFTfiMMqhUC_taL0boP0E6JmHhsTALkTsHYR7ZjTgM7akLOtmCbEjHpLXTCIt-zVFU&_nc_ohc=4mdaSoCZZ50Q7kNvgHfEibM&_nc_gid=xGbGbVZm3Uoc-A1cKea9QQ&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzUxNjU0MTE0MDI0MzcyMDE3MQ%3D%3D.3-ccb7-5&oh=00_AYEz_1ybKJQTyahIALy4QmiYdnWL2daMNA85C52AyTXNqw&oe=67E0DD4A&_nc_sid=7a9f4b",
+                    "url": "https://www.instagram.com/sanz.alvaro/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "4",
+                    "reviewCount": "3",
+                    "ratingValue": "3.7",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Igor",
+                        "datePublished": "2022-04-02",
+                        "reviewBody": "Celebré mi cumpleaños número 30 en Voro y fue una buena experiencia. Calificaría el restaurante como un restaurante 1 Michelin ⭐️ (según la experiencia previa con 1 y 2 ⭐️ restaurantes).",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "4",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "giuly",
+                        "datePublished": "2024-03-20",
+                        "reviewBody": "No nos gustó nada.\nSin embargo, un personal muy agradable que realmente hizo un esfuerzo.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "2",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Jose",
+                        "datePublished": "2024-10-08",
+                        "reviewBody": "Experiencia maravillosa, supera cualquier expectativa. Servicio buenísimo, comida espectacular y la puesta en escena insuperable. Nos encantó el menú, lleno de detalles y plagado de técnica. Nos sorprendió la manera tan sutil y equilibrada de esconder y divertirse en cada plato con los sabores tan característicos de Andalucía y Mallorca.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Voro",
+                    "url": "https://www.youtube.com/embed/ou7AGkiDuG0?start=5&playlist=ou7AGkiDuG0&mute=1&enablejsapi=1&controls=1&showinfo=0&autoplay=1&modestbranding=1&loop=1&fs=0&cc_load_policy=0&iv_load_policy=3&autohide=1&rel=0&playsinline=1&widgetid=1&origin=https%3A%2F%2Fvororestaurant.com&disablekb=1&color=red&forigin=https%3A%2F%2Fvororestaurant.com%2F&aoriginsup=0&gporigin=https%3A%2F%2Fvororestaurant.com%2Fcontacto%2F&vf=4&vq=hd1080"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "dins",
+                "name": "DINS Santi Taura",
+                "identifier": "din",
+                "image": "https://www.dinssantitaura.com/wp-content/uploads/restaurante-dins-santi-taura-espacio-3.jpg",
+                "logo": "https://www.dinssantitaura.com/wp-content/uploads/logo-dins-1-2048x668.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Mallorca",
+                    "addressRegion": "Palma de Mallorca",
+                    "postalCode": "07001",
+                    "streetAddress": "Plaza de Llorenç Villalonga 4"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "39.566455",
+                    "longitude": "2.653010"
+                },
+                "hasMap": "https://maps.app.goo.gl/Cw2ifEJcCmq6g2z57",
+                "acceptsReservations": "https://www.dinssantitaura.com/#reserva",
+                "servesCuisine": "Moderna",
+                "email": "reserves@santitaura.com",
+                "telephone": "+34669959042",
+                "description": "Ofrecemos una experiencia gastronómica única basada en la cocina tradicional de las islas y elaborada con ingredientes de temporada de origen local. Nuestros comensales pueden elegir entre diferentes propuestas y sus armonías opcionales.",
+                "openingHours": "We-Sa 19:30-20:30",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:30:00",
+                        "closes": "20:30:00",
+                        "validFrom": "2025-01-01",
+                        "validThrough": "2026-12-31"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "13:00:00",
+                        "closes": "14:00:00",
+                        "validFrom": "2025-01-01",
+                        "validThrough": "2026-12-31"
+                    }
+                ],
+                "priceRange": "€€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Diners Club",
+                        "logo": "https://guide.michelin.com/assets/images/icons/dinersclub-a10e0a79ac42bf17f5035356b9b8339b.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Santi Taura",
+                    "givenName": "Álvaro",
+                    "familyName": "Salazar",
+                    "award": "Una estrellas Michelin y dos soles Repsol",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "\"Escogí la cocina porque quería ser diferente de mis compañeros del colegio y no estudiar lo que estudiaba la mayoría. Hace 22 años los cocineros no éramos mediáticos como ahora. Cuando nos preguntaron en el colegio qué quería estudiar y dije cocina, todos mis compañeros se giraron para mirarme y pensé: he acertado. Para mi la cocina es creatividad y disfruté. Estudié en el centro Juníper Serra, en Palma de Mallorca, y me he formado en diferentes restaurante y hoteles. Pero mi cocina es autodidacta. Intento comer en diferentes restaurantes e inspirarme, pero no sigo el camino de otros.\"",
+                    "image": "https://www.dinssantitaura.com/wp-content/uploads/2020/03/DSC0062_HQ-1.jpg",
+                    "url": "https://www.grupsantitaura.com/es/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "5",
+                    "reviewCount": "3",
+                    "ratingValue": "4.7",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Gemma",
+                        "datePublished": "2024-12-19",
+                        "reviewBody": "Personalmente el menú me gustó pero le faltaba calor a la comida. Los platos simplemente estaban templados y, para mi, hace que pierda el sabor.\nLuego hubo dos cosas que no nos gusto. La mesa muy pobre decorada. Mantel blanco y ya. Para ser un restaurante bueno le daba aspecto de bar de barrio. (Opinión personal). Y la segunda, imagino que porque era el primer turno, teníamos la mesa justo al lado de donde se ponían los camareros y teníamos la sensación de tener a 5 personas encima nuestra mirándonos todo el rato, nos sentimos un poco incómodos. Luego si es verdad que el servicio muy bien, muy simpáticos y el menú bien pensado. Aunque mejoraría los postres!",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "4",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Alberto",
+                        "datePublished": "2025-01-08",
+                        "reviewBody": "Ha sido una de nuestras experiencias culinarias más excelentes que hemos tenido tanto mi pareja como yo. El servicio de 10, la comida ha sido increíble y estar en la barra con Santi Taura de cerca la mejor elección que hemos hecho sin lugar a duda. A parte de degustar hemos conocido algo más de historia gastronómica mallorquina, esperamos volver pronto. Nuestro mejor regalo de reyes ha sido este.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Emilio",
+                        "datePublished": "2025-02-03",
+                        "reviewBody": "Comer con un mago de la comida es increíble. ¡Cómo nos ha hecho disfrutar de los productos de temporada y sobretodo locales!\nLa experiencia de la barra hace que sea todavía más excepcional!\nEl maridaje de vinos perfectamente seleccionado y acorde con cada uno de los platos. Recomiendo empezar con su Vermut...\nFelicidades a todo el equipo. Volveremos!!!",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo DINS Santi Taura",
+                    "url": "https://youtu.be/tUmqmn04yaU"
+                }
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+                "@type": "Restaurant",
+                "@id": "clastra",
+                "name": "Sa Clastra",
+                "identifier": "sac",
+                "image": "https://profitroom-uploads.fra1.digitaloceanspaces.com/castellsonclaret/1730x881/17302133847532_.restaurantesaclastrainterior.webp",
+                "logo": "https://www.dinssantitaura.com/wp-content/uploads/logo-dins-1-2048x668.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "ES",
+                    "addressLocality": "Mallorca",
+                    "addressRegion": "Calvia",
+                    "postalCode": "07196",
+                    "streetAddress": "Carretera Es Capdellà-Galilea, km 1.7"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "39.59248",
+                    "longitude": "2.47976"
+                },
+                "hasMap": "https://maps.app.goo.gl/4dUdt4GHm7UPsgFJ7",
+                "acceptsReservations": "https://www.castellsonclaret.com/gastronomia/sa-clastra-reservas",
+                "servesCuisine": "Creativa",
+                "email": "saclastra@castellsonclaret.com",
+                "telephone": "+34971138627",
+                "description": "El restaurante con estrella Michelin Sa Clastra está situado en la elegante finca y hotel rural Castell Son Claret, al pie de la Sierra de Tramuntana, en el pintoresco pueblo de Es Capdellà. Un majestuoso camino de palmeras de 200 metros te conduce a un oasis culinario en el histórico patio de Sa Clastra, donde los menús de degustación se elaboran en perfecta sintonía con el ritmo de las estaciones.",
+                "openingHours": "Tu-Sa 19:30-21:30",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:00:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-03-01",
+                        "validThrough": "2025-03-31"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:00:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-04-01",
+                        "validThrough": "2025-05-31"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:30:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-06-01",
+                        "validThrough": "2025-08-31"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:30:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-09-01",
+                        "validThrough": "2025-09-30"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "19:30:00",
+                        "closes": "21:30:00",
+                        "validFrom": "2025-10-01",
+                        "validThrough": "2025-10-31"
+                    }
+                ],
+                "priceRange": "€€€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card",
+                "acceptedPaymentMethod": [
+                    {
+                        "@type": "PaymentMethod",
+                        "paymentMethodType": "https://schema.org/Cash",
+                        "name": "Cash",
+                        "image": "https://kurogami.com/ui/iconos/info/contrareembolso.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "American Express",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Diners Club",
+                        "logo": "https://guide.michelin.com/assets/images/icons/dinersclub-a10e0a79ac42bf17f5035356b9b8339b.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Maestro",
+                        "logo": "https://cdn.worldvectorlogo.com/logos/maestro-2.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "MasterCard",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                    },
+                    {
+                        "@type": "LoanOrCredit",
+                        "name": "Visa",
+                        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                    }
+                ],
+                "award": "Una estrella Michelin",
+                "employee": {
+                    "@type": "Person",
+                    "name": "Jordi Cantó Castellón",
+                    "givenName": "Jordi",
+                    "familyName": "Cantó Castellón",
+                    "award": "Una estrella Michelin y un sol Repsol",
+                    "gender": "Male",
+                    "jobTitle": "Chef",
+                    "description": "Criado en un entorno familiar tradicional, donde la comida solía ser epicentro de las ocasiones especiales y muchas tardes en las que tanto él como sus hermanos se reunían alrededor de la mesa de su abuela, deleitándose con sus recetas cargadas de historia, amor y detalles. Los fines de semana los pasaban foravila y disfrutaban alrededor de suculentas recetas como arròs brut a la leña, donde siempre había un hueco para todo el que quisiera participar en su elaboración. Fueron esas ocasiones familiares, las que despertaron en Jordi el interés por la cocina y es aquella herencia culinaria que se traspasaba de generación en generación a la que quiere rendir hoy su más sincero homenaje en el local que hoy regenta: Sa Clastra, en el Castell de Son Claret, con el que ha conseguido, en su primer año, una estrella Michelin.",
+                    "image": "https://profitroom-uploads.fra1.digitaloceanspaces.com/castellsonclaret/576x671/17302135707556_.castellsonclaretteam1.webp",
+                    "url": "https://www.instagram.com/jordicanto/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": "5",
+                    "reviewCount": "3",
+                    "ratingValue": "4.7",
+                    "bestRating": "5.0",
+                    "worstRating": "1.0"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": "Anabel",
+                        "datePublished": "2023-03-20",
+                        "reviewBody": "Excelente en todos los sentidos, la experiencia ha superado con creces las expectativas.\nGran menú degustación, eclosión de sabores y un deleite al paladar. La atención del maître Philip y del sumiller Sebastián inmejorable, sin olvidarse de José, camarero muy atento y encantador.\nSin duda repetiremos, faltan estrellas para puntuar.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Mónica",
+                        "datePublished": "2024-06-08",
+                        "reviewBody": "Estuvimos este martes, la cena sólo puedo decir que estaba deliciosa, nos gustaron todos los platos.\nLa atención del sumiller fue de 10, el vino q nos recomendó todo un acierto.\nLa única pega fue lo que tardaron en servir cada plato y al final en los postres ya la espera fue demasiada, una pena porque esto nos estropeo la velada.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "4",
+                            "worstRating": "1"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": "Alina",
+                        "datePublished": "2024-09-14",
+                        "reviewBody": "Sa Clastra, con estrella Michelin, ofrece una experiencia culinaria excepcional. Cada plato, creado por el talentoso chef Jordi Cantó, destaca por su innovación y atención al detalle. La combinación de sabores y la presentación de los platos reflejan una pasión genuina por la gastronomía.\nEl ambiente y el servicio son igualmente sobresalientes, haciendo de cada visita una experiencia memorable.\nSin duda, Sa Clastra es un destino imprescindible para los amantes de la buena comida.\nGracias por todo!",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "bestRating": "5",
+                            "ratingValue": "5",
+                            "worstRating": "1"
+                        }
+                    }
+                ],
+                "subjectOf": {
+                    "@type": "VideoObject",
+                    "name": "Vídeo Sa Clastra",
+                    "url": "https://www.youtube.com/watch?v=jDHoUVlLEgY"
+                }
+            }
+        }
+    ]
+}

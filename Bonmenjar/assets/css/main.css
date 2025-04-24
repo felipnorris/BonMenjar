@@ -2059,3 +2059,81 @@ section,
   overflow: hidden;
   transition: height 0.35s ease;
 }
+
+/*--------------------------------------------------------------
+# Restaurants Section
+--------------------------------------------------------------*/
+.restaurants {
+  background-color: var(--surface-color);
+  padding: 60px 0;
+}
+
+.restaurant-item {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.restaurant-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-color);
+}
+
+.restaurant-name {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+}
+
+.restaurant-address {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.restaurant-address i {
+  color: var(--accent-color);
+}
+
+#restaurants-pagination {
+  margin-top: 30px;
+}
+
+#restaurants-pagination .page-item {
+  margin: 0 5px;
+}
+
+#restaurants-pagination .page-link {
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 8px !important;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  font-family: var(--nav-font);
+  font-weight: 500;
+}
+
+#restaurants-pagination .page-link:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+#restaurants-pagination .page-item.active .page-link {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+#restaurants-pagination .page-item.disabled .page-link {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  background-color: transparent;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}

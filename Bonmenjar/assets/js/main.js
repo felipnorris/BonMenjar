@@ -6,6 +6,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+import { RestaurantHandler } from './RestaurantHandler.js';
+
 (function() {
   "use strict";
 
@@ -172,5 +174,12 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Initialize RestaurantHandler
+    const restaurantHandler = new RestaurantHandler();
+    restaurantHandler.init();
+  });
 
 })();
