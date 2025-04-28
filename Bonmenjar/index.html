@@ -30,8 +30,6 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
-
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
@@ -317,16 +315,16 @@
           <form class="contact-form">
             <div class="row gy-3">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="El teu nom" required>
+                <input type="text" class="form-control" id="contact-name" placeholder="El teu nom" required>
               </div>
               <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="El teu email" required>
+                <input type="email" class="form-control" id="contact-email" placeholder="El teu email" required>
               </div>
               <div class="col-12">
-                <input type="text" class="form-control" placeholder="Assumpte" required>
+                <input type="text" class="form-control" id="contact-subject" placeholder="Assumpte" required>
               </div>
               <div class="col-12">
-                <textarea class="form-control" rows="5" placeholder="Missatge" required></textarea>
+                <textarea class="form-control" rows="5" id="contact-text" placeholder="Missatge" required></textarea>
               </div>
               <div class="col-12 text-center">
                 <button type="submit" class="btn btn-primary">Enviar missatge</button>
@@ -397,7 +395,7 @@ Ubicació (opcional):
   <!-- Main JS Files -->
   <script type="module" src="assets/js/main.js"></script>
   <script type="module" src="assets/js/RecipeHandler.js"></script>
-  <script type="module" src="assets/js/BestRecipes.js"></script>
+  <script src="assets/js/BestRecipes.js"></script>
   <script src="assets/js/recipeFormat.js"></script>
 
   <!-- Recipe Modal -->

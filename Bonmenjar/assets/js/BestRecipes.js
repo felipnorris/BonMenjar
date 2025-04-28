@@ -1,5 +1,4 @@
-// assets/js/BestRecipes.js
-export class BestRecipes {
+class BestRecipes {
     constructor() {
         this.recipes = [];
         this.reviews = [];

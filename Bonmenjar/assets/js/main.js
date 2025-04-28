@@ -177,7 +177,7 @@ import { RestaurantHandler } from './RestaurantHandler.js';
 
   document.addEventListener('DOMContentLoaded', function() {
     
-    // Initialize RestaurantHandler
+    // Inicialitzar RestaurantHandler
     const restaurantHandler = new RestaurantHandler();
     restaurantHandler.init();
   });
