@@ -1050,6 +1050,88 @@
                         "longitude": 3.0176
                     }
                 }
+            },
+            "recipe-12": {
+                "@type": "Recipe",
+                "name": "Coca de verdures",
+                "image": "assets/img/menu/coca-de-verdures.webp",
+                "description": "La coca de verdures és una recepta tradicional mallorquina elaborada amb massa casolana i verdures fresques de temporada com bledes, cebes tendres i tomàtigues.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-05-01",
+                "recipeCategory": "entrant",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H15M",
+                "recipeYield": "6 persones",
+                "recipeIngredient": [
+                    "185 g de mantega de porc",
+                    "185 ml d'oli",
+                    "250 ml d'aigua tèbia",
+                    "Farina (la que admeti)",
+                    "1 pessic de sal",
+                    "1 manat de bledes",
+                    "1 manat de cebes tendres",
+                    "1 manat de julivert",
+                    "3 o 4 tomàtigues",
+                    "2 arengades",
+                    "Alls",
+                    "Pebre vermell dolç",
+                    "Oli d'oliva",
+                    "Sal"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Prepara la massa: en un bol gran posa l’oli, l’aigua tèbia, la mantega i una mica de sal. Afegeix farina poc a poc mentre amasses amb la mà fins que la massa es despegui dels dits però encara sigui un poc enganxosa."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Estira la massa amb les mans damunt una safata de forn i forma els vorals amb una forqueta."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Talla les bledes i posa-les dins un bol amb un poc de sal. Afegeix les cebes tendres tallades, el julivert picat i alls picats. Amaneix-ho amb oli d’oliva, sal i pebre vermell."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Posa una capa del farcit damunt la massa, col·loca-hi les arengades trossejades, i acaba d’afegir la resta del farcit."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Col·loca per damunt les rodanxes de tomàtiga i enforna-ho a 180 ºC durant uns 35 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixa refredar una mica abans de servir."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.youtube.com/embed/IRdMi2L_PpY"
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "350 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "maig",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Celler Sa Plaça",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Església, 16",
+                        "addressLocality": "Lloseta",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude": 2.8648221
+                    }
+                }
             }
         }
     ]

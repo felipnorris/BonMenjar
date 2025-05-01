@@ -29,7 +29,7 @@ export class YouTubeHandler {
             console.error('YouTube API not loaded yet');
             return;
         }
-    
+
         if (this.player) {
             this.player.loadVideoById(videoId);
         } else {
@@ -40,7 +40,8 @@ export class YouTubeHandler {
                 playerVars: {
                     'playsinline': 1,
                     'rel': 0,
-                    'modestbranding': 1
+                    'modestbranding': 1,
+                    'origin': window.location.origin // Add this line
                 },
                 events: {
                     'onError': (e) => console.error('YouTube Player Error:', e)
@@ -50,23 +51,13 @@ export class YouTubeHandler {
     }
 
     extractYouTubeId(url) {
-        // Handle YouTube short URLs
-        if (url.includes('youtu.be/')) {
-            return url.split('youtu.be/')[1].split(/[?&]/)[0];
-        }
-        
-        // Handle standard URLs
-        const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
         const match = url.match(regExp);
-        
-        // Additional check for parameters right after ID
-        const id = (match && match[2].length === 11) ? match[2] : null;
-        console.log('YouTube ID:', id);
-        return id ? id.split(/[&?]/)[0] : null; // Truncate at first & or ?
+        return (match && match[2].length === 11) ? match[2] : null;
     }
 
     stopVideo() {
-        if (this.player) {
+        if (this.player && typeof this.player.stopVideo === 'function') {
             this.player.stopVideo();
         }
     }

@@ -16,7 +16,7 @@ export class FeaturedRecipeHandler {
     findFeaturedRecipe(recipes) {
       const featured = Object.entries(recipes).find(([_, recipe]) => 
         recipe.temporal && recipe.temporal.toLowerCase() === this.currentMonth
-        //recipe.temporal && recipe.temporal.toLowerCase() === "octubre"   --> Per fer proves.
+        // recipe.temporal && recipe.temporal.toLowerCase() === "octubre"   // --> Per fer proves.
       );
       return featured ? { id: featured[0], ...featured[1] } : null;
     }
