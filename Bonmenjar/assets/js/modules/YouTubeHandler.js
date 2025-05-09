@@ -21,9 +21,33 @@ export class YouTubeHandler {
         });
     }
 
+    async cleanupPlayer() {
+        if (this.player) {
+            // Detener el video primero
+            this.stopVideo();
+            // Destruir el player
+            this.player.destroy();
+            this.player = null;
+            
+            // Esperar un momento para asegurar la limpieza
+            await new Promise(resolve => setTimeout(resolve, 100));
+        }
+    }
+
     loadVideo(url, videoFrame) {
+        if (!url) {
+            videoFrame.innerHTML = "<div class=\"alert alert-info\">El video d'aquesta recepta no està disponible en aquests moments.</div>";
+            return;
+        }
+
         const videoId = this.extractYouTubeId(url);
-        if (!videoId) return;
+        if (!videoId) {
+            console.error('URL de video no válida');
+            if (videoFrame) {
+                videoFrame.innerHTML = '<div class="alert alert-danger">URL de video no válida</div>';
+            }
+            return;
+        }
         
         if (!window.YT) {
             console.error('YouTube API not loaded yet');
@@ -41,7 +65,7 @@ export class YouTubeHandler {
                     'playsinline': 1,
                     'rel': 0,
                     'modestbranding': 1,
-                    'origin': window.location.origin // Add this line
+                    'origin': window.location.origin
                 },
                 events: {
                     'onError': (e) => console.error('YouTube Player Error:', e)
