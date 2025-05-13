@@ -7,7 +7,7 @@ export class RestaurantHandler {
 
     async init() {
         try {
-            const response = await fetch('assets/data/restaurants.json');
+            const response = await fetch('https://www.bresmi.com/JSON/restaurantes.json');
             const data = await response.json();
             this.restaurants = data.itemListElement.map(item => item.item);
             this.displayRestaurants();

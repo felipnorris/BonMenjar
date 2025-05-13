@@ -10,7 +10,25 @@ export class FeaturedRecipeHandler {
         localStorage.setItem('recipeCache', JSON.stringify(this.recipeCache));
       }
       const featuredRecipe = this.findFeaturedRecipe(this.recipeCache[this.currentMonth] || recipes);
+      
+      // Preload image before updating the hero section
+      if (featuredRecipe?.image) {
+        await this.preloadImage(featuredRecipe.image);
+        if (featuredRecipe.imageMobile) {
+          await this.preloadImage(featuredRecipe.imageMobile);
+        }
+      }
+      
       this.updateHeroSection(featuredRecipe);
+    }
+    
+    async preloadImage(url) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = resolve;
+      });
     }
   
     findFeaturedRecipe(recipes) {
@@ -52,9 +70,20 @@ export class FeaturedRecipeHandler {
       if (elements.prepTime) elements.prepTime.textContent = this.formatTime(featuredRecipe.totalTime);
       if (elements.servings) elements.servings.textContent = featuredRecipe.recipeYield ? `${featuredRecipe.recipeYield}` : 'N/A';
       if (elements.description) elements.description.innerHTML = `${featuredRecipe.description || ''}`;
-      if (elements.image && elements.image.src !== featuredRecipe.image) {
-        elements.image.src = window.innerWidth <= 768 ? (featuredRecipe.imageMobile || featuredRecipe.image) : featuredRecipe.image;
-        elements.image.alt = featuredRecipe.name;
+      if (elements.image) {
+        const imageUrl = window.innerWidth <= 768 ? 
+          (featuredRecipe.imageMobile || featuredRecipe.image) : 
+          featuredRecipe.image;
+        
+        // Solo actualizar si la URL es diferente
+        if (elements.image.src !== imageUrl) {
+          elements.image.src = imageUrl;
+          elements.image.alt = featuredRecipe.name || '';
+          elements.image.loading = 'eager'; // Solo para la imagen hero principal
+          // Añadir dimensiones intrínsecas si están disponibles
+          if (featuredRecipe.imageWidth) elements.image.width = featuredRecipe.imageWidth;
+          if (featuredRecipe.imageHeight) elements.image.height = featuredRecipe.imageHeight;
+        }
       }
       if (elements.recipeLink) elements.recipeLink.dataset.recipeId = featuredRecipe.id;
     }

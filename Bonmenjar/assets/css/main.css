@@ -861,6 +861,12 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+.hero-img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
