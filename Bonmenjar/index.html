@@ -138,7 +138,7 @@
             <div class="search-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Cerca receptes..." id="recipe-search">
-                    <button class="btn btn-outline-secondary" type="button">
+                    <button class="btn btn-outline-secondary" type="button" alt="Cerca" id="search-button">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
@@ -218,14 +218,14 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="restaurants-wrapper">
-          <div class="row restaurants-row flex-nowrap pb-3" id="restaurants-container">
+          <div class="row g-4" id="restaurants-container">
             <!-- Els restaurants es carregaran aquí dinàmicament -->
           </div>
         </div>
 
         <div class="pagination-container mt-4 d-flex justify-content-center">
           <nav aria-label="Paginació de restaurants">
-            <ul class="pagination pagination-lg" id="restaurants-pagination">
+            <ul class="pagination" id="restaurants-pagination">
               <!-- La paginació es generarà aquí dinàmicament -->
             </ul>
           </nav>

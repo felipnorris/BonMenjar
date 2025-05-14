@@ -22,36 +22,38 @@ export class RestaurantHandler {
         const startIndex = (this.currentPage - 1) * this.restaurantsPerPage;
         const endIndex = startIndex + this.restaurantsPerPage;
         const currentRestaurants = this.restaurants.slice(startIndex, endIndex);
-      
+    
         container.innerHTML = '';
-      
+    
         currentRestaurants.forEach(restaurant => {
-          const restaurantElement = document.createElement('div');
-          restaurantElement.className = 'col-md-4 restaurant-item';
-          restaurantElement.innerHTML = `
-            <a href="${restaurant.acceptsReservations}" target="_blank" rel="noopener noreferrer" class="text-decoration-none d-block h-100">
-              <div class="restaurant-content">
+        const restaurantElement = document.createElement('div');
+        restaurantElement.className = 'col-12 col-md-6 col-lg-4';
+        restaurantElement.innerHTML = `
+            <div class="restaurant-item h-100">
+            <a href="${restaurant.acceptsReservations}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                <div class="restaurant-content">
                 <h3 class="restaurant-name">${restaurant.name}</h3>
                 <p class="restaurant-address mb-0">
-                  <i class="bi bi-geo-alt me-2"></i>
-                  ${restaurant.address.streetAddress},<br>
-                  ${restaurant.address.postalCode} ${restaurant.address.addressLocality}
+                    <i class="bi bi-geo-alt me-2"></i>
+                    ${restaurant.address.streetAddress},<br>
+                    ${restaurant.address.postalCode} ${restaurant.address.addressLocality}
                 </p>
-              </div>
+                </div>
             </a>
-          `;
-          container.appendChild(restaurantElement);
+            </div>
+        `;
+        container.appendChild(restaurantElement);
         });
-      
+    
         // Rellenar el espacio restante si hay menos de 3 restaurantes
         const remaining = this.restaurantsPerPage - currentRestaurants.length;
         for (let i = 0; i < remaining; i++) {
-          const emptyElement = document.createElement('div');
-          emptyElement.className = 'col-md-4 restaurant-item';
-          emptyElement.style.visibility = 'hidden';
-          container.appendChild(emptyElement);
+        const emptyElement = document.createElement('div');
+        emptyElement.className = 'col-12 col-md-6 col-lg-4';
+        emptyElement.innerHTML = `<div class="restaurant-item h-100" style="visibility: hidden"></div>`;
+        container.appendChild(emptyElement);
         }
-      }
+    }
 
     setupPagination() {
         const paginationContainer = document.getElementById('restaurants-pagination');

@@ -2137,3 +2137,50 @@ section,
   background-color: transparent;
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
+
+@media (max-width: 768px) {
+  .restaurants .row {
+    flex-wrap: wrap !important;
+    margin: 0;
+  }
+
+  .restaurant-item {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .restaurant-name {
+    font-size: 1.1rem;
+  }
+
+  .restaurant-address {
+    font-size: 0.9rem;
+  }
+
+  #restaurants-pagination .page-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  #restaurants-pagination {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .restaurants {
+    padding: 40px 0;
+  }
+
+  .restaurant-item {
+    padding: 15px;
+  }
+
+  #restaurants-pagination .page-item {
+    margin: 0 2px;
+  }
+
+  #restaurants-pagination .page-link {
+    padding: 4px 10px;
+  }
+}
