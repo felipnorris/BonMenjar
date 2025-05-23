@@ -106,33 +106,29 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-            <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-entrants">
-                <p>Entrants</p>
-              </a>
-            </li><!-- End tab nav item -->
-
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-principals">
-                <p>Plats principals</p>
-              </a><!-- End tab nav item -->
-
+          <ul class="nav nav-tabs d-flex justify-content-center" role="tablist" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="entrants-tab" data-bs-toggle="tab" data-bs-target="#menu-entrants" type="button" role="tab" aria-controls="menu-entrants" aria-selected="true">
+                Entrants
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-postres">
-                <p>Postres</p>
-              </a>
-            </li><!-- End tab nav item -->
-
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-begudes">
-                <p>Begudes</p>
-              </a>
-            </li><!-- End tab nav item -->
-
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="principals-tab" data-bs-toggle="tab" data-bs-target="#menu-principals" type="button" role="tab" aria-controls="menu-principals" aria-selected="false">
+                Plats principals
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="postres-tab" data-bs-toggle="tab" data-bs-target="#menu-postres" type="button" role="tab" aria-controls="menu-postres" aria-selected="false">
+                Postres
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="begudes-tab" data-bs-toggle="tab" data-bs-target="#menu-begudes" type="button" role="tab" aria-controls="menu-begudes" aria-selected="false">
+                Begudes
+              </button>
+            </li>
           </ul>
+
           
           <div class="d-flex justify-content-center mt-4">
             <div class="search-box" data-aos="fade-up" data-aos-delay="100">
@@ -148,7 +144,7 @@
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
 
           <!-- Entrants -->
-          <div class="tab-pane fade active show" id="menu-entrants">
+          <div class="tab-pane fade show active" id="menu-entrants" role="tabpanel" aria-labelledby="entrants-tab">
               <div class="tab-header text-center">
                   <h3>Entrants</h3>
               </div>
@@ -156,9 +152,9 @@
                   <!-- Contingut dinàmic aqui -->
               </div>
           </div>
-      
+
           <!-- Plats Principals -->
-          <div class="tab-pane fade" id="menu-principals">
+          <div class="tab-pane fade" id="menu-principals" role="tabpanel" aria-labelledby="principals-tab">
               <div class="tab-header text-center">
                   <h3>Plats principals</h3>
               </div>
@@ -166,9 +162,9 @@
                    <!-- Contingut dinàmic aqui -->
               </div>
           </div>
-      
+
           <!-- Postres -->
-          <div class="tab-pane fade" id="menu-postres">
+          <div class="tab-pane fade" id="menu-postres" role="tabpanel" aria-labelledby="postres-tab">
               <div class="tab-header text-center">
                   <h3>Postres</h3>
               </div>
@@ -176,9 +172,9 @@
                    <!-- Contingut dinàmic aqui -->
               </div>
           </div>
-      
+
           <!-- Begudes -->
-          <div class="tab-pane fade" id="menu-begudes">
+          <div class="tab-pane fade" id="menu-begudes" role="tabpanel" aria-labelledby="begudes-tab">
               <div class="tab-header text-center">
                   <h3>Begudes</h3>
               </div>
@@ -186,11 +182,8 @@
                    <!-- Contingut dinàmic aqui -->
               </div>
           </div>
-      
+        </div>
       </div>
-
-      </div>
-
     </section><!-- /Menu Section -->
 
     <!-- Testimonials Section -->
@@ -251,9 +244,7 @@
               <div class="member-img">
                 <img src="assets/img/chefs/foto-carlos.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="social">
-
                   <a href="https://instagram.com/larruscarloss" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-              
                 </div>
               </div>
               <div class="member-info">

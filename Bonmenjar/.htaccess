@@ -1,25 +1,78 @@
-# Enable compression
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
-    AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
-    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
-    AddOutputFilterByType DEFLATE application/json
+# Si tienes un certificado SSL, puedes forzar la redirección a HTTPS. (en local debe estar desactivado)
+# RewriteEngine On
+ # RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Compresión (Brotli + Gzip)
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript application/javascript application/json application/xml image/svg+xml font/woff2 font/woff image/webp
 </IfModule>
 
-# Cache Control
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/xml image/svg+xml font/woff2 font/woff image/webp
+    
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# Configuración Avanzada de Caché
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresDefault "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # Datos
+    ExpiresByType application/json "access plus 1 hour"
+    
+    # Fuentes
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    
+    # CSS y JS
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType text/javascript "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType image/gif "access plus 1 month"
-    ExpiresByType image/jpeg "access plus 1 month"
-    ExpiresByType image/png "access plus 1 month"
-    ExpiresByType image/webp "access plus 1 month"
+    
+    # Imágenes
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # SWF y otros
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
 
-# Security Headers
+# Encabezados de Caché y Seguridad
 <IfModule mod_headers.c>
+    # Políticas de caché para recursos estáticos
+    <FilesMatch "\.(webp|woff2|woff|css|js|svg|jpe?g|png|gif|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Encabezados de seguridad
     Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # HSTS (Opcional - Solo si tienes SSL permanente)
+    # Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 </IfModule>
+
+# Prevenir hotlinking (opcional)
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{HTTP_REFERER} !^https://(www\.)?bonmerijar\.com/.*$ [NC]
+    RewriteRule \.(webp|jpe?g|png|gif)$ - [F,NC,L]
+</IfModule>
+
+# Evitar listar directorios
+Options -Indexes
+
+# Comprimir archivos de fuente (opcional)
+AddType font/woff2 .woff2
+AddType font/woff .woff

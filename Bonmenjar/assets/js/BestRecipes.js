@@ -82,7 +82,7 @@ class BestRecipes {
                 <div class="testimonial-slide">
                     <div class="row align-items-center">
                         <div class="col-md-5">
-                            <img src="${recipe.image}" class="img-fluid recipe-image" alt="${recipe.name}">
+                            <img src="${recipe.image}" class="img-fluid recipe-image" loading="lazy" alt="${recipe.name}">
                         </div>
                         <div class="col-md-7">
                             <div class="recipe-info">

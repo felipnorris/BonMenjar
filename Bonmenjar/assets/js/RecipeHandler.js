@@ -71,7 +71,7 @@ export class RecipeHandler {
                 categoryContainer.innerHTML += `
                     <div class="col-lg-4 menu-item">
                         <a href="#" class="recipe-link" data-recipe-id="${id}">
-                            <img src="${recipe.image}" class="menu-img img-fluid" alt="${recipe.name}">
+                            <img src="${recipe.image}" class="menu-img img-fluid" loadding="lazy" alt="${recipe.name}">
                         </a>
                         <h4>${recipe.name}</h4>
                         <p class="recipe-meta">
