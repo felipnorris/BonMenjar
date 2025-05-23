@@ -1219,9 +1219,6 @@ section,
   margin-top: 1rem;
 }
 
-/* ...existing code... */
-
-/* Estils millorats per la barra de cerca */
 .search-box {
     max-width: 500px;
     width: 100%;
@@ -1294,8 +1291,6 @@ section,
         padding: 6px 15px;
     }
 }
-
-/* ...existing code... */
 
 .menu .menu-img {
   width: 100%;
