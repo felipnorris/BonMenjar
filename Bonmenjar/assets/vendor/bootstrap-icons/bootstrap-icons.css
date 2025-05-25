@@ -74,3 +74,5 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-person-fill::before { content: "\f4da"; }
 .bi-x-lg::before { content: "\f659"; }
 .bi-arrow-up-short::before { content: "\f145"; }
+.bi-play-circle-fill::before { content: "\f4f2"; }
+.bi-play-circle::before { content: "\f4f3"; }

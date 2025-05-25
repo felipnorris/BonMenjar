@@ -133,9 +133,6 @@ export class RecipeHandler {
             this.youtubeHandler.stopVideo();
         });
 
-        document.querySelector('.btn-share')?.addEventListener('click', () => {
-            this.shareRecipe();
-        });
     }
 
     initializeSearch() {
@@ -225,22 +222,6 @@ export class RecipeHandler {
             .join('');
     }
 
-    async shareRecipe() {
-        if (!this.currentRecipeId || !this.recipes[this.currentRecipeId]) return;
-
-        const recipe = this.recipes[this.currentRecipeId];
-        if (navigator.share) {
-            try {
-                await navigator.share({
-                    title: recipe.name,
-                    text: recipe.description,
-                    url: window.location.href
-                });
-            } catch (error) {
-                console.error('Error sharing recipe:', error);
-            }
-        }
-    }
 }
 
 // Initialize when DOM is ready
