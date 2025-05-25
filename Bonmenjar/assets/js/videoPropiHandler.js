@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const videoUrls = {
-        carlos: 'assets/video/carlos.mp4',
-        felip: 'assets/video/felip.mp4',
-        rafa: 'assets/video/rafa.mp4'
+        carlos: 'assets/video/video-carlos.mp4',
+        felip: 'assets/video/video-felip.mp4',
+        rafa: 'assets/video/video-rafa.mp4'
     };
 
     const videoModal = document.getElementById('videoModal');
