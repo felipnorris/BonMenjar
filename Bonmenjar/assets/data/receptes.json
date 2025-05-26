@@ -1132,6 +1132,213 @@
                         "longitude": 2.8648221
                     }
                 }
+            },
+            "recipe-13": {
+                "@type": "Recipe",
+                "name": "Sobrassada de Mallorca",
+                "image": "assets/img/menu/sobrassada.webp",
+                "description": "La sobrassada és un embotit típic de Mallorca, elaborat amb carn de porc, pimentó i espècies. Es consumeix durant tot l'any però és especialment popular a l'hivern.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "entrants",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT0D",
+                "recipeYield": "1 unitat",
+                "recipeIngredient": [
+                    "1 kg de carn de porc",
+                    "50 g de sal",
+                    "50 g de pimentó dolç",
+                    "5 g de pebre negre",
+                    "Tripa natural"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Picar la carn de porc i barrejar-la amb la sal, el pimentó i el pebre."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Embotir la barreja en la tripa natural."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Deixar assecar en un lloc fresc i ventilat durant 2-3 setmanes."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": null
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "450 kcal",
+                    "servingSize": "100 g"
+                },
+                "temporal": "febrer",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Celler Sa Plaça",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Esglèsia, 16",
+                        "addressLocality": "Lloseta",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7196586,
+                        "longitude": 2.8648221
+                    }
+                }
+            },
+            "recipe-14": {
+                "@type": "Recipe",
+                "name": "Llom amb Col",
+                "image": "assets/img/menu/llom-amb-col.webp",
+                "description": "El llom amb col és un plat tradicional de Mallorca que es prepara amb carn de porc i col, ideal per als mesos d'estiu.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT1H30M",
+                "recipeYield": "4 persones",
+                "recipeIngredient": [
+                    "500 g de llom de porc",
+                    "1 col",
+                    "2 tomàquets",
+                    "2 alls",
+                    "1 ceba",
+                    "Oli d'oliva",
+                    "Sal",
+                    "Pebre"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Tallar la col i coure-la en aigua amb sal."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "En una cassola, sofregir la ceba i els alls picats."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir el llom de porc tallat a trossos i daurar-lo."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorporar els tomàquets pelats i tallats, i cuinar durant 10 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir la col escorreguda i coure tot plegat durant 30 minuts."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": null
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "300 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "juliol",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Ca na Toneta",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer Major, 12",
+                        "addressLocality": "Palma",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.6953,
+                        "longitude": 3.0176
+                    }
+                }
+            },
+            "recipe-15": {
+                "@type": "Recipe",
+                "name": "Sopes de Matances",
+                "image": "assets/img/menu/sopes-matances.webp",
+                "description": "Les sopes de matances són un plat típic de les festes de desembre, elaborat amb carn de porc i verdures.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "BonMenjar"
+                },
+                "datePublished": "2024-03-15",
+                "recipeCategory": "principals",
+                "recipeCuisine": "Balear",
+                "totalTime": "PT2H",
+                "recipeYield": "6 persones",
+                "recipeIngredient": [
+                    "500 g de carn de porc",
+                    "200 g de botifarró",
+                    "2 patates",
+                    "1 col",
+                    "2 tomàquets",
+                    "2 alls",
+                    "1 ceba",
+                    "Oli d'oliva",
+                    "Sal",
+                    "Pebre"
+                ],
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "En una cassola, sofregir la ceba i els alls picats."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir la carn de porc tallada a trossos i daurar-la."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Incorporar els tomàquets pelats i tallats, i cuinar durant 10 minuts."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Afegir les patates i la col tallades, i cobrir amb aigua."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Coure durant 1 hora i afegir el botifarró als últims 15 minuts."
+                    }
+                ],
+                "video": {
+                    "@type": "VideoObject",
+                    "contentUrl": null
+                },
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "400 kcal",
+                    "servingSize": "1 porció"
+                },
+                "temporal": "desembre",
+                "subjectOf": {
+                    "@type": "Restaurant",
+                    "name": "Celler Ca'n Ripoll",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Carrer d'en Jaume Armengol, 4",
+                        "addressLocality": "Inca",
+                        "addressRegion": "Illes Balears"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 39.7205505,
+                        "longitude": 2.9088065
+                    }
+                }
             }
         }
     ]
