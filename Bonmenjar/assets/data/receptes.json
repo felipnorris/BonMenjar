@@ -340,7 +340,7 @@
                 ],
                 "video": {
                     "@type": "VideoObject",
-                    "contentUrl": "https://www.youtube.com/embed/example2"
+                    "contentUrl": null
                 },
                 "nutrition": {
                     "@type": "NutritionInformation",
@@ -428,7 +428,7 @@
                 ],
                 "video": {
                     "@type": "VideoObject",
-                    "contentUrl": "https://www.youtube.com/embed/example3"
+                    "contentUrl": null
                 },
                 "nutrition": {
                     "@type": "NutritionInformation",
@@ -1027,7 +1027,7 @@
                 ],
                 "video": {
                     "@type": "VideoObject",
-                    "contentUrl": "https://www.youtube.com/embed/example"
+                    "contentUrl": null
                 },
                 "nutrition": {
                     "@type": "NutritionInformation",
