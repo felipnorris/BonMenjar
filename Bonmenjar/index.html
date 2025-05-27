@@ -427,16 +427,22 @@ Ubicació (opcional):
                 </div>
                 <div class="review-section mt-5">
                   <h4 class="mb-4">Afegeix una ressenya</h4>
-                  <form id="review-form" class="mb-4">
+                  <form id="review-form" class="mb-4 position-relative">
                       <div class="row g-3">
                           <div class="col-md-6">
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="review-author" placeholder="El teu nom" required>
+                              <div class="form-group position-relative">
+                                  <label for="review-author" class="form-label">El teu nom</label>
+                                  <input type="text" 
+                                        class="form-control" 
+                                        id="review-author" 
+                                        required>
                               </div>
                           </div>
                           <div class="col-md-6">
-                              <div class="form-group">
-                                  <select class="form-select" id="review-rating">
+                              <div class="form-group position-relative">
+                                  <label for="review-rating" class="form-label">Valoració</label>
+                                  <select class="form-select" 
+                                          id="review-rating">
                                       <option value="5">⭐⭐⭐⭐⭐</option>
                                       <option value="4">⭐⭐⭐⭐</option>
                                       <option value="3">⭐⭐⭐</option>
@@ -446,8 +452,12 @@ Ubicació (opcional):
                               </div>
                           </div>
                           <div class="col-12">
-                              <div class="form-group">
-                                  <textarea class="form-control" id="review-comment" rows="4" placeholder="Escriu la teva ressenya..." required></textarea>
+                              <div class="form-group position-relative">
+                                  <label for="review-comment" class="form-label">La teva ressenya</label>
+                                  <textarea class="form-control" 
+                                            id="review-comment" 
+                                            rows="4" 
+                                            required></textarea>
                               </div>
                           </div>
                           <div class="col-12 text-end">
@@ -455,12 +465,12 @@ Ubicació (opcional):
                           </div>
                       </div>
                   </form>
-                  
-                  <div class="reviews-container">
-                      <h4 class="mb-3">Ressenyes</h4>
-                      <div class="reviews-list"></div>
-                  </div>
               </div>
+                  
+                <div class="reviews-container">
+                    <h4 class="mb-3">Ressenyes</h4>
+                    <div class="reviews-list"></div>
+                </div>
             </div>
         </div>
     </div>

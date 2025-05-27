@@ -1312,6 +1312,38 @@ section,
 .review-section {
   border-top: 1px solid #dee2e6;
   padding-top: 2rem;
+  position: relative;
+    z-index: 1;
+}
+
+.review-section .form-group {
+    z-index: 2;
+}
+
+.review-section .form-control,
+.review-section .form-select {
+    position: relative;
+    z-index: 3;
+    padding: 0.75rem 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.review-section .form-control:focus,
+.review-section .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(206, 18, 18, 0.25);
+    z-index: 4;
+}
+
+.modal-content {
+    overflow: visible;
+}
+
+.modal-body {
+    overflow: visible;
 }
 
 .reviews-container {
