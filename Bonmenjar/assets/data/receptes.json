@@ -64,21 +64,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": null,
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Premsa",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Plaça del Bisbe Berenguer de Palou, 8",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5708,
+                            "longitude": 2.6493
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Es Molí d’en Pau",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carretera Palma-Manacor, km 4.5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5971,
+                            "longitude": 2.7065
+                        }
                     }
-                }
+                ]
             },
             "recipe-2": {
                 "@type": "Recipe",
@@ -161,21 +178,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "març",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Sini",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 3",
+                            "addressLocality": "Sineu",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6412,
+                            "longitude": 3.0107
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Can Cera Gastro-Bar",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de la Concepció, 14",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5702,
+                            "longitude": 2.6501
+                        }
                     }
-                }
+                ]
             },
             "recipe-3":{
                 "@type": "Recipe",
@@ -268,21 +302,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "gener",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Pagès",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Felip Bauzà, 2",
+                            "addressLocality": "Alcúdia",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.8527,
+                            "longitude": 3.1221
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca’n Ripoll",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer d’en Jaume Armengol, 4",
+                            "addressLocality": "Inca",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7206,
+                            "longitude": 2.9088
+                        }
                     }
-                }
+                ]
             },
             "recipe-4": {
                 "@type": "Recipe",
@@ -348,21 +399,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "juny",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Celler Ca'n Ripoll",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer d'en Jaume Armengol, 4",
-                        "addressLocality": "Inca",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Es Racó d’es Teix",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de Sa Vinya Vella, 6",
+                            "addressLocality": "Deià",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7479,
+                            "longitude": 2.6482
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7205505,
-                        "longitude":2.9088065
+                    {
+                        "@type": "Restaurant",
+                        "name": "Restaurant S’Angel",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de l’Àngel, 2",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5678,
+                            "longitude": 2.6512
+                        }
                     }
-                }
+                ]
             },
             "recipe-5": {
                 "@type": "Recipe",
@@ -436,21 +504,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "novembre",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Celler Sa Plaça",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Esglèsia, 16",
-                        "addressLocality": "Lloseta",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Forn de la Glòria",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de la Glòria, 5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5698,
+                            "longitude": 2.6498
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude":2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca’n Joan de S’Aigo",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre, 5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5712,
+                            "longitude": 2.6534
+                        }
                     }
-                }
+                ]
             },
             "recipe-6":{
                 "@type": "Recipe",
@@ -537,21 +622,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "juny",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Forn Can Amer",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Mossèn Galmés, 76",
-                        "addressLocality": "Sant Llorenç des Cardassar",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Forn Can Amer",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Mossèn Galmés, 76",
+                            "addressLocality": "Sant Llorenç des Cardassar",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6095,
+                            "longitude": 3.2827
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude":2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Can Carrossa",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Nou, 5",
+                            "addressLocality": "Sa Pobla",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7692,
+                            "longitude": 3.0234
+                        }
                     }
-                }
+                ]
             },
             "recipe-7":{
                 "@type": "Recipe",
@@ -663,21 +765,53 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "octubre",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Es Cruce",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carretera de Palma, 0, 07250",
-                        "addressLocality": "Villafranca de Bonany",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Es Cruce",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carretera de Palma, 0",
+                            "addressLocality": "Villafranca de Bonany",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5689,
+                            "longitude": 3.0876
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude":2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Can Font",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer des Forn, 2",
+                            "addressLocality": "Sineu",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6415,
+                            "longitude": 3.0109
+                        }
+                    },
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca na Toneta",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 12",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6953,
+                            "longitude": 3.0176
+                        }
                     }
-                }
+                ]
             },
             "recipe-8":{
                 "@type": "Recipe",
@@ -768,21 +902,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": null,
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca'n Joan de S'Aigo",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre,5 07012",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca’n Joan de S’Aigo",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre, 5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5712,
+                            "longitude": 2.6534
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude":2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Forn Santo Cristo",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de Sant Miquel, 47",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5731,
+                            "longitude": 2.6528
+                        }
                     }
-                }
+                ]
             },
             "recipe-9":{
                 "@type": "Recipe",
@@ -861,21 +1012,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "agost",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca'n Joan de S'Aigo",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre, 5 07012",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca’n Joan de S’Aigo",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer del Baró de Santa Maria del Sepulcre, 5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5712,
+                            "longitude": 2.6534
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude":2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Forn de la Glòria",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer de la Glòria, 5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5698,
+                            "longitude": 2.6498
+                        }
                     }
-                }
+                ]
             },
             "recipe-10": {
                 "@type": "Recipe",
@@ -948,32 +1116,47 @@
                 "subjectOf": [
                     {
                         "@type": "Restaurant",
-                        "name": "Ca na Toneta",
+                        "name": "Celler Sa Premsa",
                         "address": {
                             "@type": "PostalAddress",
-                            "streetAddress": "Carrer Major, 12",
+                            "streetAddress": "Plaça del Bisbe Berenguer de Palou, 8",
                             "addressLocality": "Palma",
                             "addressRegion": "Illes Balears"
                         },
                         "geo": {
                             "@type": "GeoCoordinates",
-                            "latitude": 39.6953,
-                            "longitude": 3.0176
+                            "latitude": 39.5708,
+                            "longitude": 2.6493
                         }
                     },
                     {
                         "@type": "Restaurant",
-                        "name": "Celler Sa Plaça",
+                        "name": "Celler Pagès",
                         "address": {
                             "@type": "PostalAddress",
-                            "streetAddress": "Carrer Esglèsia, 16",
-                            "addressLocality": "Lloseta",
+                            "streetAddress": "Carrer Felip Bauzà, 2",
+                            "addressLocality": "Alcúdia",
                             "addressRegion": "Illes Balears"
                         },
                         "geo": {
                             "@type": "GeoCoordinates",
-                            "latitude": 39.7196586,
-                            "longitude": 2.8648221
+                            "latitude": 39.8527,
+                            "longitude": 3.1221
+                        }
+                    },
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Sini",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 3",
+                            "addressLocality": "Sineu",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6412,
+                            "longitude": 3.0107
                         }
                     }
                 ]
@@ -1035,21 +1218,38 @@
                     "servingSize": "100 ml"
                 },
                 "temporal": null,
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Ca na Toneta",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 12",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6953,
+                            "longitude": 3.0176
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Es Molí d’en Pau",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carretera Palma-Manacor, km 4.5",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5971,
+                            "longitude": 2.7065
+                        }
                     }
-                }
+                ]
             },
             "recipe-12": {
                 "@type": "Recipe",
@@ -1117,21 +1317,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "maig",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Celler Sa Plaça",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Església, 16",
-                        "addressLocality": "Lloseta",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Forn Can Amer",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Mossèn Galmés, 76",
+                            "addressLocality": "Sant Llorenç des Cardassar",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6095,
+                            "longitude": 3.2827
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude": 2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Can Carrossa",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Nou, 5",
+                            "addressLocality": "Sa Pobla",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7692,
+                            "longitude": 3.0234
+                        }
                     }
-                }
+                ]
             },
             "recipe-13": {
                 "@type": "Recipe",
@@ -1178,21 +1395,38 @@
                     "servingSize": "100 g"
                 },
                 "temporal": "febrer",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Celler Sa Plaça",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Esglèsia, 16",
-                        "addressLocality": "Lloseta",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Sini",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Major, 3",
+                            "addressLocality": "Sineu",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6412,
+                            "longitude": 3.0107
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7196586,
-                        "longitude": 2.8648221
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Ca’n Ripoll",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer d’en Jaume Armengol, 4",
+                            "addressLocality": "Inca",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.7206,
+                            "longitude": 2.9088
+                        }
                     }
-                }
+                ]
             },
             "recipe-14": {
                 "@type": "Recipe",
@@ -1250,21 +1484,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "juliol",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Ca na Toneta",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer Major, 12",
-                        "addressLocality": "Palma",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Sa Premsa",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Plaça del Bisbe Berenguer de Palou, 8",
+                            "addressLocality": "Palma",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5708,
+                            "longitude": 2.6493
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.6953,
-                        "longitude": 3.0176
+                    {
+                        "@type": "Restaurant",
+                        "name": "Es Cruce",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carretera de Palma, 0",
+                            "addressLocality": "Villafranca de Bonany",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.5689,
+                            "longitude": 3.0876
+                        }
                     }
-                }
+                ]
             },
             "recipe-15": {
                 "@type": "Recipe",
@@ -1324,21 +1575,38 @@
                     "servingSize": "1 porció"
                 },
                 "temporal": "desembre",
-                "subjectOf": {
-                    "@type": "Restaurant",
-                    "name": "Celler Ca'n Ripoll",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Carrer d'en Jaume Armengol, 4",
-                        "addressLocality": "Inca",
-                        "addressRegion": "Illes Balears"
+                "subjectOf": [
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Can Font",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer des Forn, 2",
+                            "addressLocality": "Sineu",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.6415,
+                            "longitude": 3.0109
+                        }
                     },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 39.7205505,
-                        "longitude": 2.9088065
+                    {
+                        "@type": "Restaurant",
+                        "name": "Celler Pagès",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Carrer Felip Bauzà, 2",
+                            "addressLocality": "Alcúdia",
+                            "addressRegion": "Illes Balears"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 39.8527,
+                            "longitude": 3.1221
+                        }
                     }
-                }
+                ]
             }
         }
     ]

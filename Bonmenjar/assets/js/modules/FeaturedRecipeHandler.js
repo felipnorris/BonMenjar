@@ -58,7 +58,7 @@ export class FeaturedRecipeHandler {
       if (!heroSection) return;
   
       const elements = {
-        title: heroSection.querySelector('h2'),
+        title: heroSection.querySelector('h3'),
         prepTime: heroSection.querySelector('.prep-time'),
         servings: heroSection.querySelector('.servings'),
         description: heroSection.querySelector('.recipe-description'),
